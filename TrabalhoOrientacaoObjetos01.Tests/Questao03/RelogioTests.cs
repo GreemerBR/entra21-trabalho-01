@@ -4,15 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03;
 using Xunit;
-
-
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
     public class RelogioTests
     {
-
         [Theory]
         [InlineData(01, "Uma hora")]
         [InlineData(02, "Duas horas")]
@@ -35,11 +33,9 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(19, "Dezenove horas")]
         [InlineData(20, "Vinte horas")]
         [InlineData(21, "Vinte e uma horas")]
-        [InlineData(22, "Vinte e das horas")]
+        [InlineData(22, "Vinte e duas horas")]
         [InlineData(23, "Vinte e três horas")]
-
-
-        public void ValidarHoraPorExtenso(int horaInformada, string horaExtenso)
+        public void Validar_HoraPorExtenso(int horaInformada, string horaExtenso)
         {
             //Arrange   
             var relogio = new Relogio();
@@ -51,11 +47,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
             // Assert
             horaPorExtenso.Should().Be(horaExtenso);
-
-
-
         }
     }
 }
-
-

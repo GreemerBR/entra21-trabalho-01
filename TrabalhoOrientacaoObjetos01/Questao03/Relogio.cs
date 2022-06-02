@@ -9,12 +9,15 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
     public class Relogio
     {
         public DateTime Hora;
+        public string HoraInformada;
+        public string MinutoInformado;
 
         public string Obter_Hora_Por_Extenso()
         {
-            var horaInformada = Convert.ToString(Hora.ToString("HH:mm:ss")); // .ToString("HH:mm:ss")
-            var posicaoHora1 = Convert.ToInt32(Console.ReadLine().Substring(0, 1)); //minuto: (3, 1) / segundo: (6, 1)
-            var posicaoHora2 = Convert.ToInt32(Console.ReadLine().Substring(1, 1)); //minuto: (4, 1) / segundo: (7, 1)
+
+            HoraInformada = Convert.ToString(Hora.ToString("HH:mm:ss")); // .ToString("HH:mm:ss")
+            var posicaoHora1 = Convert.ToInt32(HoraInformada.Substring(0, 1)); //minuto: (3, 1) / segundo: (6, 1)
+            var posicaoHora2 = Convert.ToInt32(HoraInformada.Substring(1, 1)); //minuto: (4, 1) / segundo: (7, 1)
             var horaExtenso = "";
 
             if (posicaoHora1 == 0 && posicaoHora2 == 0)
@@ -62,9 +65,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             {
                 horaExtenso = "Dez horas";
             }
-            else if (posicaoHora1 == 1 && posicaoHora2 == 2)
+            else if (posicaoHora1 == 1 && posicaoHora2 == 1)
             {
                 horaExtenso = "Onze horas";
+            }
+            else if (posicaoHora1 == 1 && posicaoHora2 == 2)
+            {
+                horaExtenso = "Doze horas";
             }
             else if (posicaoHora1 == 1 && posicaoHora2 == 3)
             {
@@ -72,7 +79,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             }
             else if (posicaoHora1 == 1 && posicaoHora2 == 4)
             {
-                horaExtenso = "Quartoze horas";
+                horaExtenso = "Quatorze horas";
             }
             else if (posicaoHora1 == 1 && posicaoHora2 == 5)
             {
@@ -113,10 +120,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             return horaExtenso;
         }
 
-        public void Obter_Minuto_Por_Extenso()
+        public string Obter_Minuto_Por_Extenso()
         {
             var minutoInformado = Convert.ToString(Hora.ToString("HH:mm:ss"));
-            var posicaoMinuto1 = Convert.ToInt32(Console.ReadLine().Substring(3,1));
+            var posicaoMinuto1 = Convert.ToInt32(Console.ReadLine().Substring(3, 1));
             var posicaoMinuto2 = Convert.ToInt32(Console.ReadLine().Substring(4, 1));
             var minutoPorExtenso = "";
             if (posicaoMinuto1 == 0 && posicaoMinuto2 == 0)
@@ -306,7 +313,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             }
             else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 6)
             {
-                minutoPorExtenso = "Quarentae e seis minutos";
+                minutoPorExtenso = "Quarenta e seis minutos";
             }
             else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 7)
             {
@@ -324,21 +331,45 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             {
                 minutoPorExtenso = "Cinquenta minutos";
 
-
             }
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 1)
             {
-                minutoPorExtenso = "Vinte e cinco minutos";
+                minutoPorExtenso = "Cinquenta e um minutos";
             }
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 2)
             {
-                minutoPorExtenso = "Vinte e seis minutos";
+                minutoPorExtenso = "Cinquenta e dois minutos";
             }
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 3)
             {
-                minutoPorExtenso = "Vinte e sete minutos";
+                minutoPorExtenso = "Cinquenta e três minutos";
 
             }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Cinquenta e quatro minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Cinquenta e cinco minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Cinquenta e seis minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Cinquenta e sete minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Cinquenta e oito minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Cinquenta e nove minutos";
+            }
+            return minutoPorExtenso;
 
         }
 

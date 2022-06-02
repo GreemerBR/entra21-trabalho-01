@@ -1,4 +1,5 @@
-﻿using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01;
+﻿using TrabalhoOrientacaoObjetos01.Questao03;
+using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01;
 using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02;
 //using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao03;
 
@@ -48,9 +49,9 @@ while (opcaoDesejada != 4)
        var questao02 = new ExecutarCalendario();
        questao02.Executar();
    }
-    //else if (opcaoDesejada == 3)
-    //{
-    //    var questao03 = new ExecutarRelogio();
-    //    questao03.Executar();
-    //}    
+    else if (opcaoDesejada == 3)
+    {
+        var questao03 = new ExecutarRelogio();
+        questao03.Executar();
+    }    
 }
