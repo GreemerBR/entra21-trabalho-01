@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace entra21_trabalho_01.TrabalhoOrientacaoObjetos01.Questao02
+namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
 {
-    class _
+    public class ExercicioCalendario02
     {
+       
+
     }
 }
