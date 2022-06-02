@@ -43,11 +43,11 @@ while (opcaoDesejada != 4)
         var quartao01 = new ExecutarNumero();
         quartao01.Executar();
     }
-    //else if (opcaoDesejada == 2)
-    //{
-    //    var questao02 = new ExecutarCalendario();
-    //    questao02.Executar();
-    //}
+    else if (opcaoDesejada == 2)
+    {
+       var questao02 = new ExecutarCalendario();
+       questao02.Executar();
+   }
     //else if (opcaoDesejada == 3)
     //{
     //    var questao03 = new ExecutarRelogio();
