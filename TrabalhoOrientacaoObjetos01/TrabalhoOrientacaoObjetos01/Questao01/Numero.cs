@@ -333,7 +333,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
             if (dezena == "0")
             {
-                dezenaPorExtenso = "Zero.";
+                dezenaPorExtenso = "Este número não possui dezena.";
             }
             else if (dezena == "1")
             {
@@ -375,9 +375,87 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             return dezenaPorExtenso;
         }
 
+        public string ObterCentenaPorExtenso()
+        {
+            var centena = "";
+            var centenaPorExtenso = "";
 
-        /* Centena
-         * UnidadeDeMilhar
+            var numeroInformado = Convert.ToString(Valor);
+
+            var possuiVirgula = numeroInformado.Contains(',');
+
+            if (possuiVirgula == true)
+            {
+                var indexVirgula = numeroInformado.IndexOf(",");
+
+                if (indexVirgula >= 3)
+                {
+                    centena = numeroInformado.Substring((indexVirgula - 3), 1);
+                }
+                else
+                {
+                    centenaPorExtenso = "Este número não possui centena.";
+                }
+            }
+            else
+            {
+                if (numeroInformado.Length >= 2)
+                {
+                    centena = numeroInformado.Substring((numeroInformado.Length - 3), 1);
+                }
+                else
+                {
+                    centenaPorExtenso = "Este número não possui centena.";
+                }
+            }
+
+
+            if (centena == "0")
+            {
+                centenaPorExtenso = "Este número não possui centena.";
+            }
+            else if (centena == "1")
+            {
+                centenaPorExtenso = "Cem.";
+            }
+            else if (centena == "2")
+            {
+                centenaPorExtenso = "Duzentos.";
+            }
+            else if (centena == "3")
+            {
+                centenaPorExtenso = "Trezentos.";
+            }
+            else if (centena == "4")
+            {
+                centenaPorExtenso = "Quatrocentos.";
+            }
+            else if (centena == "5")
+            {
+                centenaPorExtenso = "Quinhentos.";
+            }
+            else if (centena == "6")
+            {
+                centenaPorExtenso = "Seissentos.";
+            }
+            else if (centena == "7")
+            {
+                centenaPorExtenso = "Setessentos.";
+            }
+            else if (centena == "8")
+            {
+                centenaPorExtenso = "Oitocentos.";
+            }
+            else if (centena == "9")
+            {
+                centenaPorExtenso = "Novecentos.";
+            }
+
+            return centenaPorExtenso;
+        }
+
+
+        /* UnidadeDeMilhar
          * NumeroCompleto
          */
     }
