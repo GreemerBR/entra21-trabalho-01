@@ -40,18 +40,17 @@ while (opcaoDesejada != 4)
 
     if (opcaoDesejada == 1)
     {
-
-        var quartao01 = new Principal();
+        var quartao01 = new ExecutarNumero();
         quartao01.Executar();
     }
     //else if (opcaoDesejada == 2)
     //{
-    //    var questao02 = new Questao02();
+    //    var questao02 = new ExecutarCalendario();
     //    questao02.Executar();
     //}
     //else if (opcaoDesejada == 3)
     //{
-    //    var questao03 = new Questao03();
+    //    var questao03 = new ExecutarRelogio();
     //    questao03.Executar();
     //}    
 }

@@ -12,15 +12,18 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
     public class NumeroTests
     {
         [Theory]
-        [InlineData(0.01, "Um.")]
-        [InlineData(0.02, "Dois.")]
-        [InlineData(0.03, "Três.")]
-        [InlineData(0.04, "Quatro.")]
-        [InlineData(0.05, "Cinco.")]
-        [InlineData(0.06, "Seis.")]
-        [InlineData(0.07, "Sete.")]
-        [InlineData(0.08, "Oito.")]
-        [InlineData(0.09, "Nove.")]
+        [InlineData(0, "Zero.")]
+        [InlineData(0.0, "Zero.")]
+        [InlineData(0.00, "Zero.")]
+        [InlineData(0.01, "Zero um.")]
+        [InlineData(0.02, "Zero dois.")]
+        [InlineData(0.03, "Zero três.")]
+        [InlineData(0.04, "Zero quatro.")]
+        [InlineData(0.05, "Zero cinco.")]
+        [InlineData(0.06, "Zero seis.")]
+        [InlineData(0.07, "Zero sete.")]
+        [InlineData(0.08, "Zero oito.")]
+        [InlineData(0.09, "Zero nove.")]
         [InlineData(0.1, "Dez.")]
         [InlineData(0.10, "Dez.")]
         [InlineData(0.11, "Onze.")]
@@ -121,7 +124,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(0.98, "Noventa e oito.")]
         [InlineData(0.99, "Noventa e nove.")]
 
-        public void Validar_ObterDecimalPorExtenso(double numeroInformado,string numeroDecimalPorExtenso)
+        public void Cenario01_Validar_ObterDecimalPorExtenso(double numeroInformado,string numeroDecimalPorExtenso)
         {
             // Arrange
             var numero = new Numero();
