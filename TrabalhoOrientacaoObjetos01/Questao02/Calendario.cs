@@ -74,7 +74,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             return mesExtenso;
         }
 
-        public void ObterDiaPorExtenso()
+        public string ObterDiaPorExtenso()
         {
             var dia = Convert.ToString(Data.Day);
             var primeiraParteDia = dia.Substring(0, 1);
@@ -119,7 +119,9 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                     diaExtenso = "Dia Nove";
                 }
 
+
             }
+
             if (primeiraParteDia == "1")
             {
                 if (segundaParteDia == "0")
@@ -217,8 +219,9 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                     }
                 }
             }
+            return diaExtenso;
         }
-        public void ObterAnoPorExtenso()
+        public string ObterAnoPorExtenso()
         {
             var ano = Convert.ToString(Data.Year);
             var primeiraParteAno = ano.Substring(0, 1);
@@ -226,289 +229,152 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             var terceiraParteAno = ano.Substring(2, 1);
             var quartaParteAno = ano.Substring(3, 1);
             var anoExtenso = "";
+            var anoPrimeiraParteExtenso = "";
+            var anoSegundaParteExtenso = "";
+            var anoTerceiraParteExtenso = "";
+            var anoQuartaParteExtenso = "";
 
             if (primeiraParteAno == "1")
             {
-                if (segundaParteAno == "9")
-                {
-                    if (terceiraParteAno == "7")
-                    {
-                        if (quartaParteAno == "0")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta";
-                        }
-                        else if (quartaParteAno == "1")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Um";
-                        }
-                        else if (quartaParteAno == "2")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Dois";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Três";
-                        }
-                        else if (quartaParteAno == "4")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Quatro";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Cinco";
-                        }
-                        else if (quartaParteAno == "6")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Seis";
-                        }
-                        else if (quartaParteAno == "7")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Sete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Oito";
-                        }
-                        else
-                        {
-                            anoExtenso = "Mil Novecentos e Setenta e Nove";
-                        }
-
-                    }
-                    if (terceiraParteAno == "8")
-                    {
-                        if (quartaParteAno == "0")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta";
-                        }
-                        else if (quartaParteAno == "1")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Um";
-                        }
-                        else if (quartaParteAno == "2")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Dois";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Três";
-                        }
-                        else if (quartaParteAno == "4")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Quatro";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Cinco";
-                        }
-                        else if (quartaParteAno == "6")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Seis";
-                        }
-                        else if (quartaParteAno == "7")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Sete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Oito";
-                        }
-                        else
-                        {
-                            anoExtenso = "Mil Novecentos e Oitenta e Nove";
-                        }
-                    }
-                    if (terceiraParteAno == "9")
-                    {
-                        if (quartaParteAno == "0")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa";
-                        }
-                        else if (quartaParteAno == "1")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Um";
-                        }
-                        else if (quartaParteAno == "2")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Dois";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Três";
-                        }
-                        else if (quartaParteAno == "4")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Quatro";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Cinco";
-                        }
-                        else if (quartaParteAno == "6")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Seis";
-                        }
-                        else if (quartaParteAno == "7")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Sete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Oito";
-                        }
-                        else
-                        {
-                            anoExtenso = "Mil Novecentos e Noventa e Nove";
-                        }
-                    }
-                }
+                anoPrimeiraParteExtenso = "Mil";
             }
-            if (primeiraParteAno == "2")
+            else if (primeiraParteAno == "2")
             {
-                if (segundaParteAno == "0")
-                {
-                    if (terceiraParteAno == "0")
-                    {
-                        if (quartaParteAno == "0")
-                        {
-                            anoExtenso = "Dois Mil";
-                        }
-                        else if (quartaParteAno == "1")
-                        {
-                            anoExtenso = "Dois Mil e Um";
-                        }
-                        else if (quartaParteAno == "2")
-                        {
-                            anoExtenso = "Dois Mil e Dois";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Dois Mil e Três";
-                        }
-                        else if (quartaParteAno == "4")
-                        {
-                            anoExtenso = "Dois Mil e Quatro";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Dois Mil e Cinco";
-                        }
-                        else if (quartaParteAno == "6")
-                        {
-                            anoExtenso = "Dois Mil e Seis";
-                        }
-                        else if (quartaParteAno == "7")
-                        {
-                            anoExtenso = "Dois Mil e Sete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Dois Mil e Oito";
-                        }
-                        else
-                        {
-                            anoExtenso = "Dois Mil e Nove";
-                        }
-                    }
-                    if (terceiraParteAno == "1")
-                    {
-                        if (quartaParteAno == "0")
-                        {
-                            anoExtenso = "Dois Mil e Dez";
-                        }
-                        else if (quartaParteAno == "1")
-                        {
-                            anoExtenso = "Dois Mil e Onze";
-                        }
-                        else if (quartaParteAno == "2")
-                        {
-                            anoExtenso = "Dois Mil e Doze";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Dois Mil e Treze";
-                        }
-                        else if (quartaParteAno == "4")
-                        {
-                            anoExtenso = "Dois Mil e Catorze";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Dois Mil e Quinze";
-                        }
-                        else if (quartaParteAno == "6")
-                        {
-                            anoExtenso = "Dois Mil e Dezesseis";
-                        }
-                        else if (quartaParteAno == "7")
-                        {
-                            anoExtenso = "Dois Mil e Dezessete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Dois Mil e Dezenove";
-                        }
-                        else
-                        {
-                            anoExtenso = "Dois Mil e Dezenove";
-                        }
-                    }
-                    if(terceiraParteAno == "2")
-                    {
-                        if(quartaParteAno == "0")
-                        {
-                            anoExtenso = "Dois Mil e Vinte";
-                        }
-                        else if(quartaParteAno == "1")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Um";
-                        }
-                        else if(quartaParteAno == "2")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Dois";
-                        }
-                        else if (quartaParteAno == "3")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Três";
-                        }
-                        else if(quartaParteAno == "4")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Quatro";
-                        }
-                        else if (quartaParteAno == "5")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Cinco";
-                        }
-                        else if(quartaParteAno == "6")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Seis";
-                        }
-                        else if(quartaParteAno == "7")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Sete";
-                        }
-                        else if (quartaParteAno == "8")
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Oito";
-                        }
-                        else
-                        {
-                            anoExtenso = "Dois Mil e Vinte e Nove";
-                        }
-                    }
-                    if(terceiraParteAno == "3")
-                    {
-                        if(quartaParteAno == "0")
-                        {
-                            anoExtenso = "Dois Mil e Trinta";
-                        }
-                    }
-                }
+                anoPrimeiraParteExtenso = "Dois Mil";
             }
 
+            if (segundaParteAno == "9")
+            {
+                anoSegundaParteExtenso = "Novecentos";
+            }
+            else if (segundaParteAno == "8")
+            {
+                anoSegundaParteExtenso = "Oitocentos";
+            }
+            else if (segundaParteAno == "7")
+            {
+                anoSegundaParteExtenso = "Setecentos";
+            }
+            else if (segundaParteAno == "6")
+            {
+                anoSegundaParteExtenso = "Seiscentos";
+            }
+            else if (segundaParteAno == "5")
+            {
+                anoSegundaParteExtenso = "Quinhentos";
+            }
+            else if (segundaParteAno == "4")
+            {
+                anoSegundaParteExtenso = "Quatrocentos";
+            }
+            else if (segundaParteAno == "3")
+            {
+                anoSegundaParteExtenso = "Trezentos";
+            }
+            else if (segundaParteAno == "2")
+            {
+                anoSegundaParteExtenso = "Duzentos";
+            }
+            else if (segundaParteAno == "1")
+            {
+                anoSegundaParteExtenso = "Cem";
+            }
+
+
+            if (terceiraParteAno == "9")
+            {
+                anoPrimeiraParteExtenso = "Noventa";
+            }
+            else if (terceiraParteAno == "8")
+            {
+                anoPrimeiraParteExtenso = "Oitenta";
+            }
+            else if (terceiraParteAno == "7")
+            {
+                anoPrimeiraParteExtenso = "Setenta";
+            }
+            else if (terceiraParteAno == "6")
+            {
+                anoPrimeiraParteExtenso = "Sessenta";
+            }
+            else if (terceiraParteAno == "5")
+            {
+                anoPrimeiraParteExtenso = "Cinquenta";
+            }
+            else if (terceiraParteAno == "4")
+            {
+                anoPrimeiraParteExtenso = "Quarenta";
+            }
+            else if (terceiraParteAno == "3")
+            {
+                anoPrimeiraParteExtenso = "Trinta";
+            }
+            else if (terceiraParteAno == "2")
+            {
+                anoPrimeiraParteExtenso = "Vinte";
+            }
+            else if (terceiraParteAno == "1")
+            {
+                anoPrimeiraParteExtenso = "Dez";
+            }
+
+            if (quartaParteAno == "0")
+            {
+                anoQuartaParteExtenso = "";
+            }
+            else if (quartaParteAno == "1")
+            {
+                anoQuartaParteExtenso = "Um";
+            }
+            else if (quartaParteAno == "2")
+            {
+                anoQuartaParteExtenso = "Dois";
+            }
+            else if (quartaParteAno == "3")
+            {
+                anoQuartaParteExtenso = "Três";
+            }
+            else if (quartaParteAno == "4")
+            {
+                anoQuartaParteExtenso = "Quatro";
+            }
+            else if (quartaParteAno == "5")
+            {
+                anoQuartaParteExtenso = "Cinco";
+            }
+            else if (quartaParteAno == "6")
+            {
+                anoQuartaParteExtenso = "Seis";
+            }
+            else if (quartaParteAno == "7")
+            {
+                anoQuartaParteExtenso = "Sete";
+            }
+            else if (quartaParteAno == "8")
+            {
+                anoQuartaParteExtenso = "Oito";
+            }
+            else if (quartaParteAno == "9")
+            {
+                anoQuartaParteExtenso = "Nove";
+            }
+
+            anoExtenso = primeiraParteAno + " " + segundaParteAno + " " + terceiraParteAno + " " + quartaParteAno;
+
+            return anoExtenso;
         }
-        public void ObterDataCompletaPorExtenso()
+
+        public string ObterDataCompletaPorExtenso()
         {
+            var mes = Convert.ToString(Data.Month);
+            var dia = Convert.ToString(Data.Day);
+            var ano = Convert.ToString(Data.Year);
+            var mesExtenso = ObterMesPorExtenso();
+            var diaExtenso = ObterDiaPorExtenso();
+            var anoExtenso = ObterAnoPorExtenso();
+
+            var dataPorExtenso = diaExtenso + " de " + mesExtenso + " de " + anoExtenso + ".";
+            return dataPorExtenso;
 
         }
     }
