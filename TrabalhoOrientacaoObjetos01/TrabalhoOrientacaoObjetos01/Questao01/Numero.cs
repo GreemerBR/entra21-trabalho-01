@@ -231,8 +231,73 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             return decimalPorExtenso;
         }
 
-        /* Unidade
-         * Dezena
+        public string ObterUnidadePorExtenso()
+        {
+            var unidade = "";            
+
+            var numeroInformado = Convert.ToString(Valor);
+
+            var possuiVirgula = numeroInformado.Contains(',');
+
+            if (possuiVirgula == true)
+            {
+                var indexVirgula = numeroInformado.IndexOf(",");
+
+                unidade = numeroInformado.Substring((indexVirgula - 1), 1);
+            }
+            else
+            {
+                unidade = numeroInformado.Substring((numeroInformado.Length), 1);
+            }
+
+            var unidadePorExtenso = "";
+
+            if (unidade == "0")
+            {
+                unidadePorExtenso = "Zero.";
+            }
+            else if (unidade == "1")
+            {
+                unidadePorExtenso = "Um.";
+            }
+            else if (unidade == "2")
+            {
+                unidadePorExtenso = "Dois.";
+            }
+            else if (unidade == "3")
+            {
+                unidadePorExtenso = "Três.";
+            }
+            else if (unidade == "4")
+            {
+                unidadePorExtenso = "Quatro.";
+            }
+            else if (unidade == "5")
+            {
+                unidadePorExtenso = "Cinco.";
+            }
+            else if (unidade == "6")
+            {
+                unidadePorExtenso = "Seis.";
+            }
+            else if (unidade == "7")
+            {
+                unidadePorExtenso = "Sete.";
+            }
+            else if (unidade == "8")
+            {
+                unidadePorExtenso = "Oito.";
+            }
+            else
+            {
+                unidadePorExtenso = "Nove.";
+            }
+
+            return unidadePorExtenso;
+        }
+
+
+        /* Dezena
          * Centena
          * UnidadeDeMilhar
          * NumeroCompleto
