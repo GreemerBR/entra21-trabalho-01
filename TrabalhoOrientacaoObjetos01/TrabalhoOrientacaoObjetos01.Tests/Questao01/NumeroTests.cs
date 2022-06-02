@@ -123,7 +123,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(0.97, "Noventa e sete.")]
         [InlineData(0.98, "Noventa e oito.")]
         [InlineData(0.99, "Noventa e nove.")]
-
         public void Cenario01_Validar_ObterDecimalPorExtenso(double numeroInformado,string numeroDecimalPorExtenso)
         {
             // Arrange
@@ -135,6 +134,40 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
             // Assert
             numeroPorExtenso.Should().Be(numeroDecimalPorExtenso);
+        }
+
+        [Theory]
+        [InlineData(0, "Zero.")]
+        [InlineData(0.5, "Zero.")]
+        [InlineData(1, "Um.")]
+        [InlineData(1.5, "Um.")]
+        [InlineData(2, "Dois.")]
+        [InlineData(2.5, "Dois.")]
+        [InlineData(3, "Três.")]
+        [InlineData(3.5, "Três.")]
+        [InlineData(4, "Quatro.")]
+        [InlineData(4.5, "Quatro.")]
+        [InlineData(5, "Cinco.")]
+        [InlineData(5.5, "Cinco.")]
+        [InlineData(6, "Seis.")]
+        [InlineData(6.5, "Seis.")]
+        [InlineData(7, "Sete.")]
+        [InlineData(7.5, "Sete.")]
+        [InlineData(8, "Oito.")]
+        [InlineData(8.5, "Oito.")]
+        [InlineData(9, "Nove.")]
+        [InlineData(9.5, "Nove.")]
+        public void Cenario02_Validar_ObterUnidadePorExtenso(double numeroInformado, string unidadePorExtenso)
+        {
+            // Arrange
+            var numero = new Numero();
+            numero.Valor = numeroInformado;
+
+            // Act
+            var numeroPorExtenso = numero.ObterUnidadePorExtenso();
+
+            // Assert
+            numeroPorExtenso.Should().Be(unidadePorExtenso);
         }
     }
 }

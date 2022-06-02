@@ -247,7 +247,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else
             {
-                unidade = numeroInformado.Substring((numeroInformado.Length), 1);
+                unidade = numeroInformado.Substring((numeroInformado.Length - 1), 1);
             }
 
             var unidadePorExtenso = "";
