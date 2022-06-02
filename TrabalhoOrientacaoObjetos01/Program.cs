@@ -1,5 +1,5 @@
 ﻿using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01;
-//using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02;
+using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02;
 //using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao03;
 
 var opcaoDesejada = 0;

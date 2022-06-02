@@ -22,7 +22,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
             if (possuiVirgula == true)
             {
-                var indexVirgula = numeroInformado.IndexOf(",");                
+                var indexVirgula = numeroInformado.IndexOf(",");
 
                 var primeiraParteDecimal = "";
                 var segundaParteDecimal = "";
@@ -42,7 +42,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Zero.";
+                        decimalPorExtenso = "Zero décimos.";
                     }
                     else
                     {
@@ -53,50 +53,50 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Dez.";
+                        decimalPorExtenso = "Dez décimos.";
                     }
                     else if (segundaParteDecimal == "1")
                     {
-                        decimalPorExtenso = "Onze.";
+                        decimalPorExtenso = "Onze décimos.";
                     }
                     else if (segundaParteDecimal == "2")
                     {
-                        decimalPorExtenso = "Doze.";
+                        decimalPorExtenso = "Doze décimos.";
                     }
                     else if (segundaParteDecimal == "3")
                     {
-                        decimalPorExtenso = "Treze.";
+                        decimalPorExtenso = "Treze décimos.";
                     }
                     else if (segundaParteDecimal == "4")
                     {
-                        decimalPorExtenso = "Quatorze.";
+                        decimalPorExtenso = "Quatorze décimos.";
                     }
                     else if (segundaParteDecimal == "5")
                     {
-                        decimalPorExtenso = "Quinze.";
+                        decimalPorExtenso = "Quinze décimos.";
                     }
                     else if (segundaParteDecimal == "6")
                     {
-                        decimalPorExtenso = "Dezesseis.";
+                        decimalPorExtenso = "Dezesseis décimos.";
                     }
                     else if (segundaParteDecimal == "7")
                     {
-                        decimalPorExtenso = "Dezessete.";
+                        decimalPorExtenso = "Dezessete décimos.";
                     }
                     else if (segundaParteDecimal == "8")
                     {
-                        decimalPorExtenso = "Dezoito.";
+                        decimalPorExtenso = "Dezoito décimos.";
                     }
                     else
                     {
-                        decimalPorExtenso = "Dezenove.";
+                        decimalPorExtenso = "Dezenove décimos.";
                     }
                 }
                 else if (primeiraParteDecimal == "2")
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Vinte.";
+                        decimalPorExtenso = "Vinte décimos.";
                     }
                     else
                     {
@@ -107,7 +107,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Trinta.";
+                        decimalPorExtenso = "Trinta décimos.";
                     }
                     else
                     {
@@ -118,7 +118,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Quarenta.";
+                        decimalPorExtenso = "Quarenta décimos.";
                     }
                     else
                     {
@@ -129,7 +129,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Cinquenta.";
+                        decimalPorExtenso = "Cinquenta décimos.";
                     }
                     else
                     {
@@ -140,7 +140,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Sessenta.";
+                        decimalPorExtenso = "Sessenta décimos.";
                     }
                     else
                     {
@@ -151,7 +151,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Setenta.";
+                        decimalPorExtenso = "Setenta décimos.";
                     }
                     else
                     {
@@ -162,7 +162,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Oitenta.";
+                        decimalPorExtenso = "Oitenta décimos.";
                     }
                     else
                     {
@@ -173,7 +173,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Noventa.";
+                        decimalPorExtenso = "Noventa décimos.";
                     }
                     else
                     {
@@ -183,39 +183,39 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
                 if (segundaParteDecimal == "1")
                 {
-                    textoSegundaParte = "um.";
+                    textoSegundaParte = "um décimos.";
                 }
                 else if (segundaParteDecimal == "2")
                 {
-                    textoSegundaParte = "dois.";
+                    textoSegundaParte = "dois décimos.";
                 }
                 else if (segundaParteDecimal == "3")
                 {
-                    textoSegundaParte = "três.";
+                    textoSegundaParte = "três décimos.";
                 }
                 else if (segundaParteDecimal == "4")
                 {
-                    textoSegundaParte = "quatro.";
+                    textoSegundaParte = "quatro décimos.";
                 }
                 else if (segundaParteDecimal == "5")
                 {
-                    textoSegundaParte = "cinco.";
+                    textoSegundaParte = "cinco décimos.";
                 }
                 else if (segundaParteDecimal == "6")
                 {
-                    textoSegundaParte = "seis.";
+                    textoSegundaParte = "seis décimos.";
                 }
                 else if (segundaParteDecimal == "7")
                 {
-                    textoSegundaParte = "sete.";
+                    textoSegundaParte = "sete décimos.";
                 }
                 else if (segundaParteDecimal == "8")
                 {
-                    textoSegundaParte = "oito.";
+                    textoSegundaParte = "oito décimos.";
                 }
                 else if (segundaParteDecimal == "9")
                 {
-                    textoSegundaParte = "nove.";
+                    textoSegundaParte = "nove décimos.";
                 }
 
                 if (decimalPorExtenso == "")
@@ -225,7 +225,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else
             {
-                decimalPorExtenso = "Zero.";
+                decimalPorExtenso = "Zero décimos.";
             }
 
             return decimalPorExtenso;
@@ -233,7 +233,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
         public string ObterUnidadePorExtenso()
         {
-            var unidade = "";            
+            var unidade = "";
 
             var numeroInformado = Convert.ToString(Valor);
 
@@ -299,6 +299,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
         public string ObterDezenaPorExtenso()
         {
             var dezena = "";
+            var dezenaPorExtenso = "";
 
             var numeroInformado = Convert.ToString(Valor);
 
@@ -308,14 +309,27 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             {
                 var indexVirgula = numeroInformado.IndexOf(",");
 
-                dezena = numeroInformado.Substring((indexVirgula - 2), 1);
-            }
+                if (indexVirgula >= 2)
+                {
+                    dezena = numeroInformado.Substring((indexVirgula - 2), 1);
+                }
+                else
+                {
+                    dezenaPorExtenso = "Este número não possui dezena.";
+                }
+            }            
             else
             {
-                dezena = numeroInformado.Substring((numeroInformado.Length - 2), 1);
+                if (numeroInformado.Length >= 2)
+                {
+                    dezena = numeroInformado.Substring((numeroInformado.Length - 2), 1);
+                }
+                else
+                {
+                    dezenaPorExtenso = "Este número não possui dezena.";
+                }                
             }
-
-            var dezenaPorExtenso = "";
+            
 
             if (dezena == "0")
             {
@@ -353,7 +367,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             {
                 dezenaPorExtenso = "Oitenta.";
             }
-            else
+            else if (dezena == "9")
             {
                 dezenaPorExtenso = "Noventa.";
             }
