@@ -454,9 +454,90 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             return centenaPorExtenso;
         }
 
+        public string ObterUnidadeDeMilharPorExtenso()
+        {
+            var milhar = "";
+            var milharPorExtenso = "";
 
-        /* UnidadeDeMilhar
-         * NumeroCompleto
-         */
+            var numeroInformado = Convert.ToString(Valor);
+
+            var possuiVirgula = numeroInformado.Contains(',');
+
+            if (possuiVirgula == true)
+            {
+                var indexVirgula = numeroInformado.IndexOf(",");
+
+                if (indexVirgula >= 4)
+                {
+                    milhar = numeroInformado.Substring((indexVirgula - 4), 1);
+                }
+                else
+                {
+                    milharPorExtenso = "Este número não possui milhar.";
+                }
+            }
+            else
+            {
+                if (numeroInformado.Length >= 4)
+                {
+                    milhar = numeroInformado.Substring((numeroInformado.Length - 4), 1);
+                }
+                else
+                {
+                    milharPorExtenso = "Este número não possui milhar.";
+                }
+            }
+
+
+            if (milhar == "0")
+            {
+                milharPorExtenso = "Este número não possui milhar.";
+            }
+            else if (milhar == "1")
+            {
+                milharPorExtenso = "Mil.";
+            }
+            else if (milhar == "2")
+            {
+                milharPorExtenso = "Dois mil.";
+            }
+            else if (milhar == "3")
+            {
+                milharPorExtenso = "Três mil.";
+            }
+            else if (milhar == "4")
+            {
+                milharPorExtenso = "Quatro mil.";
+            }
+            else if (milhar == "5")
+            {
+                milharPorExtenso = "Cinco mil.";
+            }
+            else if (milhar == "6")
+            {
+                milharPorExtenso = "Seis mil.";
+            }
+            else if (milhar == "7")
+            {
+                milharPorExtenso = "Sete mil.";
+            }
+            else if (milhar == "8")
+            {
+                milharPorExtenso = "Oito mil.";
+            }
+            else if (milhar == "9")
+            {
+                milharPorExtenso = "Nove mil.";
+            }
+
+            return milharPorExtenso;
+        }
+
+        public string ObterNumeroCompletoPorExtenso()
+        {
+            var numeroCompletoPorExtenso = "";
+
+            return numeroCompletoPorExtenso;
+        }
     }
 }

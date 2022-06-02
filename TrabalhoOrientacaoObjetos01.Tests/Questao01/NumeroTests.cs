@@ -407,5 +407,29 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             // Assert
             numeroPorExtenso.Should().Be(centenaPorExtenso);
         }
+
+        [Theory]
+        [InlineData(759, "Este número não possui milhar.")]
+        [InlineData(1112, "Mil.")]
+        [InlineData(2207, "Dois mil.")]
+        [InlineData(3361, "Três mil.")]
+        [InlineData(4482, "Quatro mil.")]
+        [InlineData(5509, "Cinco mil.")]
+        [InlineData(6622, "Seis mil.")]
+        [InlineData(7794, "Sete mil.")]
+        [InlineData(8811, "Oito mil.")]
+        [InlineData(9903, "Nove mil.")]
+        public void Cenario05_Validar_ObterUnidadeDeMilharPorExtenso(double numeroInformado, string milharPorExtenso)
+        {
+            // Arrange
+            var numero = new Numero();
+            numero.Valor = numeroInformado;
+
+            // Act
+            var numeroPorExtenso = numero.ObterUnidadeDeMilharPorExtenso();
+
+            // Assert
+            numeroPorExtenso.Should().Be(milharPorExtenso);
+        }
     }
 }
