@@ -271,11 +271,96 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                         }
                         else
                         {
-                            anoExtenso = "Mil Novecentos e Noventa e Nove";
+                            anoExtenso = "Mil Novecentos e Setenta e Nove";
                         }
                        
                     }
-
+                    if(terceiraParteAno == "8")
+                    {
+                        if(quartaParteAno == "0")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta";
+                        }
+                        else if(quartaParteAno == "1")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Um";
+                        }
+                        else if(quartaParteAno == "2")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Dois";
+                        }
+                        else if (quartaParteAno == "3")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Três";
+                        }
+                        else if (quartaParteAno == "4")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Quatro";
+                        }
+                        else if(quartaParteAno== "5")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Cinco";
+                        }
+                        else if(quartaParteAno == "6")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Seis";
+                        }
+                        else if(quartaParteAno == "7")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Sete";
+                        }
+                        else if(quartaParteAno == "8")
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Oito";
+                        }
+                        else
+                        {
+                            anoExtenso = "Mil Novecentos e Oitenta e Nove";
+                        }
+                    }
+                    if(terceiraParteAno == "9")
+                    {
+                        if(quartaParteAno == "0")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa";
+                        }
+                        else if(quartaParteAno == "1")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Um";
+                        }
+                        else if(quartaParteAno == "2")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Dois";
+                        }
+                        else if(quartaParteAno == "3")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Três";
+                        }
+                        else if(quartaParteAno == "4")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Quatro";
+                        }
+                        else if (quartaParteAno == "5")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Cinco";
+                        }
+                        else if(quartaParteAno == "6")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Seis";
+                        }
+                        else if(quartaParteAno == "7")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Sete";
+                        }
+                        else if (quartaParteAno == "8")
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Oito";
+                        }
+                        else
+                        {
+                            anoExtenso = "Mil Novecentos e Noventa e Nove";
+                        }
+                    }
                 }
             }
            
