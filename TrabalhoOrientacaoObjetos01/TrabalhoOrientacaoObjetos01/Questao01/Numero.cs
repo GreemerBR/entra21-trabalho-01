@@ -16,15 +16,16 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
             var indexVirgula = numeroInformado.IndexOf(",");
 
-            var primeiraParteDecimal = numeroInformado.Substring(indexVirgula + 1, 1);
-            var segundaParteDecimal = numeroInformado.Substring(indexVirgula + 2, 1);
+            var primeiraParteDecimal = numeroInformado.Substring((indexVirgula + 1), 1);
+            var segundaParteDecimal = numeroInformado.Substring((indexVirgula + 2), 1);
 
             var decimalPorExtenso = "";
+
             var textoPrimeiraParte = "";
 
             if (primeiraParteDecimal == "1")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Dez.";
                 }
@@ -67,7 +68,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "2")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Vinte.";
                 }
@@ -78,7 +79,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "3")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Trinta.";
                 }
@@ -89,7 +90,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "4")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Quarenta.";
                 }
@@ -100,7 +101,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "5")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Cinquenta.";
                 }
@@ -111,7 +112,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "6")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Sessenta.";
                 }
@@ -122,7 +123,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "7")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Setenta.";
                 }
@@ -133,7 +134,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (primeiraParteDecimal == "8")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Oitenta.";
                 }
@@ -142,9 +143,9 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     textoPrimeiraParte = "Oitenta e ";
                 }
             }
-            else 
+            else if (primeiraParteDecimal == "9")
             {
-                if (segundaParteDecimal == "0")
+                if (segundaParteDecimal == "0" || segundaParteDecimal == "")
                 {
                     decimalPorExtenso = "Noventa.";
                 }
@@ -154,6 +155,8 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
             }
 
+            var textoSegundaParteD = "";
+
             if (segundaParteDecimal == "1")
             {
                 if (primeiraParteDecimal == "0")
@@ -162,7 +165,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "um.";
+                    textoSegundaParteD = "um.";
                 }
             }
             else if (segundaParteDecimal == "2")
@@ -173,7 +176,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "dois.";
+                    textoSegundaParteD = "dois.";
                 }
             }
             else if (segundaParteDecimal == "3")
@@ -184,7 +187,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "três.";
+                    textoSegundaParteD = "três.";
                 }
             }
             else if (segundaParteDecimal == "4")
@@ -195,7 +198,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "quatro.";
+                    textoSegundaParteD = "quatro.";
                 }
             }
             else if (segundaParteDecimal == "5")
@@ -206,7 +209,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "cinco.";
+                    textoSegundaParteD = "cinco.";
                 }
             }
             else if (segundaParteDecimal == "6")
@@ -217,7 +220,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "seis.";
+                    textoSegundaParteD = "seis.";
                 }
             }
             else if (segundaParteDecimal == "7")
@@ -228,7 +231,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "sete.";
+                    textoSegundaParteD = "sete.";
                 }
             }
             else if (segundaParteDecimal == "8")
@@ -239,7 +242,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "oito.";
+                    textoSegundaParteD = "oito.";
                 }
             }
             else if (segundaParteDecimal == "9")
@@ -250,13 +253,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    segundaParteDecimal = "nove.";
+                    textoSegundaParteD = "nove.";
                 }
             }
 
-            if (decimalPorExtenso != "")
+            if (decimalPorExtenso == "")
             {
-                decimalPorExtenso = textoPrimeiraParte + segundaParteDecimal;
+                decimalPorExtenso = textoPrimeiraParte + textoSegundaParteD;
             }
 
             return decimalPorExtenso;
@@ -268,7 +271,5 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
          * UnidadeDeMilhar
          * NumeroCompleto
          */
-
-        var
     }
 }
