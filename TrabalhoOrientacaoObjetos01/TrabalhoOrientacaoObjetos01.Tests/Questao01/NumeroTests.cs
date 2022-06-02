@@ -383,5 +383,29 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             // Assert
             numeroPorExtenso.Should().Be(dezenaPorExtenso);
         }
+
+        [Theory]
+        [InlineData(59, "Este número não possui centena.")]
+        [InlineData(112, "Cem.")]
+        [InlineData(207, "Duzentos.")]
+        [InlineData(361, "Trezentos.")]
+        [InlineData(482, "Quatrocentos.")]
+        [InlineData(509, "Quinhentos.")]
+        [InlineData(622, "Seissentos.")]
+        [InlineData(794, "Setessentos.")]
+        [InlineData(811, "Oitocentos.")]
+        [InlineData(903, "Novecentos.")]
+        public void Cenario04_Validar_ObterCentenaPorExtenso(double numeroInformado, string centenaPorExtenso)
+        {
+            // Arrange
+            var numero = new Numero();
+            numero.Valor = numeroInformado;
+
+            // Act
+            var numeroPorExtenso = numero.ObterCentenaPorExtenso();
+
+            // Assert
+            numeroPorExtenso.Should().Be(centenaPorExtenso);
+        }
     }
 }

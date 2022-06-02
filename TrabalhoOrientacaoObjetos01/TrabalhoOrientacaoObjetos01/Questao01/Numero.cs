@@ -399,7 +399,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             }
             else
             {
-                if (numeroInformado.Length >= 2)
+                if (numeroInformado.Length >= 3)
                 {
                     centena = numeroInformado.Substring((numeroInformado.Length - 3), 1);
                 }
