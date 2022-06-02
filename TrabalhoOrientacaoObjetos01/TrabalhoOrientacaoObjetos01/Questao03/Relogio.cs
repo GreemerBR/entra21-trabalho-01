@@ -12,9 +12,9 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
         public string Obter_Hora_Por_Extenso()
         {
-            var parteteHora = Convert.ToString(Hora.Hour);
-            var posicaoHora1 = Convert.ToInt32(Console.ReadLine().Substring(0, 1));
-            var posicaoHora2 = Convert.ToInt32(Console.ReadLine().Substring(1, 1));
+            var parteteHora = Convert.ToString(Hora.Hour); // .ToString("HH:mm:ss")
+            var posicaoHora1 = Convert.ToInt32(Console.ReadLine().Substring(0, 1)); //minuto: (3, 1) / segundo: (6, 1)
+            var posicaoHora2 = Convert.ToInt32(Console.ReadLine().Substring(1, 1)); //minuto: (4, 1) / segundo: (7, 1)
             var horaExtenso = "";
 
             if (posicaoHora1 == 0)

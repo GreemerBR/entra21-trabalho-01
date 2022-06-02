@@ -296,9 +296,73 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             return unidadePorExtenso;
         }
 
+        public string ObterDezenaPorExtenso()
+        {
+            var dezena = "";
 
-        /* Dezena
-         * Centena
+            var numeroInformado = Convert.ToString(Valor);
+
+            var possuiVirgula = numeroInformado.Contains(',');
+
+            if (possuiVirgula == true)
+            {
+                var indexVirgula = numeroInformado.IndexOf(",");
+
+                dezena = numeroInformado.Substring((indexVirgula - 2), 1);
+            }
+            else
+            {
+                dezena = numeroInformado.Substring((numeroInformado.Length - 2), 1);
+            }
+
+            var dezenaPorExtenso = "";
+
+            if (dezena == "0")
+            {
+                dezenaPorExtenso = "Zero.";
+            }
+            else if (dezena == "1")
+            {
+                dezenaPorExtenso = "Dez.";
+            }
+            else if (dezena == "2")
+            {
+                dezenaPorExtenso = "Vinte.";
+            }
+            else if (dezena == "3")
+            {
+                dezenaPorExtenso = "Trinta.";
+            }
+            else if (dezena == "4")
+            {
+                dezenaPorExtenso = "Quarenta.";
+            }
+            else if (dezena == "5")
+            {
+                dezenaPorExtenso = "Cinquenta.";
+            }
+            else if (dezena == "6")
+            {
+                dezenaPorExtenso = "Sessenta.";
+            }
+            else if (dezena == "7")
+            {
+                dezenaPorExtenso = "Setenta.";
+            }
+            else if (dezena == "8")
+            {
+                dezenaPorExtenso = "Oitenta.";
+            }
+            else
+            {
+                dezenaPorExtenso = "Noventa.";
+            }
+
+            return dezenaPorExtenso;
+        }
+
+
+        /* Centena
          * UnidadeDeMilhar
          * NumeroCompleto
          */
