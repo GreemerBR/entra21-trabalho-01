@@ -7,37 +7,49 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
-    //public class RelogioTests
-    //{
+    public class RelogioTests
+    {
 
-    //    [Theory]
-    //    [InlineData(01,"Uma hora")]
-    //    [InlineData(02,"Duas horas")]
-    //    [InlineData(0,3)]
-    //    [InlineData(0,4)]
-    //    [InlineData(0,4)]
-    //    [InlineData(0,5)]
-    //    [InlineData(0,6)]
-    //    [InlineData(0,7)]
-    //    [InlineData(0,8)]
-    //    [InlineData(0,9)]
-    //    [InlineData(1,0)]
-    //    [InlineData(1,1)]
-    //    [InlineData(1,2)]
-    //    [InlineData(1,3)]
-    //    [InlineData(1,4)]
-    //    [InlineData(1,4)]
-    //    [InlineData(1,5)]
-    //    [InlineData(1,6)]
-    //    [InlineData(1,7)]
-    //    [InlineData(1,8)]
-    //    [InlineData(1,9)]
-    //    [InlineData(2,0)]
-    //    [InlineData(2,1)]
-    //    [InlineData(2,1)]
-    //    [InlineData(2,2)]
-    //    [InlineData(2,3)]
-        
+        [Theory]
+        [InlineData(01, "Uma hora")]
+        [InlineData(02, "Duas horas")]
+        [InlineData(03, "Três horas")]
+        [InlineData(04, "Quatro horas")]
+        [InlineData(05, "Cinco horas")]
+        [InlineData(06, "Seis horas")]
+        [InlineData(07, "Sete horas")]
+        [InlineData(08, "Oito horas")]
+        [InlineData(09, "Nove horas")]
+        [InlineData(10, "Dez horas")]
+        [InlineData(11, "Onze horas")]
+        [InlineData(12, "Doze horas")]
+        [InlineData(13, "Treze horas")]
+        [InlineData(14, "Quatorze horas")]
+        [InlineData(15, "Quinze horas")]
+        [InlineData(16, "Dezesseis horas")]
+        [InlineData(17, "Dezessete horas")]
+        [InlineData(18, "Dezoito horas")]
+        [InlineData(19, "Dezenove horas")]
+        [InlineData(20, "Vinte horas")]
+        [InlineData(21, "Vinte e uma horas")]
+        [InlineData(22, "Vinte e das horas")]
+        [InlineData(23, "Vinte e três horas")]
 
-    //}
+
+        public void ValidarHoraPorExtenso(int horaInformada, string horaExtenso)
+        {
+            //Arrange   
+            var relogio = new Relogio();
+            var parteHora = relogio.Hora.Hour;
+            parteHora = horaInformada;
+
+            //act
+            var horaPorExtenso = relogio.Obter_Hora_Por_Extenso();
+
+            // Assert
+            horaPorExtenso.Should().Be(horaExtenso);
+
+
+
+        }
 }
