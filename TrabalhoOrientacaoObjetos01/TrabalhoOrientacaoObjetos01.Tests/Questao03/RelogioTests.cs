@@ -1,9 +1,12 @@
-﻿using System;
+﻿using FluentAssertions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+
+
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
@@ -40,8 +43,8 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         {
             //Arrange   
             var relogio = new Relogio();
-            var parteHora = relogio.Hora.Hour;
-            parteHora = horaInformada;
+            relogio.Hora = DateTime.Today.AddHours(horaInformada);
+
 
             //act
             var horaPorExtenso = relogio.Obter_Hora_Por_Extenso();
@@ -52,4 +55,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
 
         }
+    }
 }
+
+

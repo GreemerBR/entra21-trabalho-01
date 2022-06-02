@@ -12,12 +12,16 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
         public string Obter_Hora_Por_Extenso()
         {
-            var parteteHora = Convert.ToString(Hora.Hour.ToString("HH"); // .ToString("HH:mm:ss")
+            var horaInformada = Convert.ToString(Hora.ToString("HH:mm:ss")); // .ToString("HH:mm:ss")
             var posicaoHora1 = Convert.ToInt32(Console.ReadLine().Substring(0, 1)); //minuto: (3, 1) / segundo: (6, 1)
             var posicaoHora2 = Convert.ToInt32(Console.ReadLine().Substring(1, 1)); //minuto: (4, 1) / segundo: (7, 1)
             var horaExtenso = "";
 
-            if (posicaoHora1 == 0)
+            if (posicaoHora1 == 0 && posicaoHora2 == 0)
+            {
+                horaExtenso = "Zero horas";
+            }
+            else if (posicaoHora1 == 0 && posicaoHora2 == 1)
             {
                 horaExtenso = "Uma hora";
             }
@@ -96,7 +100,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             }
             else if (posicaoHora1 == 2 && posicaoHora2 == 1)
             {
-                horaExtenso = "Vinte e uma Horas";
+                horaExtenso = "Vinte e uma horas";
             }
             else if (posicaoHora1 == 2 && posicaoHora2 == 2)
             {
@@ -111,7 +115,231 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
         public void Obter_Minuto_Por_Extenso()
         {
-            
+            var minutoInformado = Convert.ToString(Hora.ToString("HH:mm:ss"));
+            var posicaoMinuto1 = Convert.ToInt32(Console.ReadLine().Substring(3,1));
+            var posicaoMinuto2 = Convert.ToInt32(Console.ReadLine().Substring(4, 1));
+            var minutoPorExtenso = "";
+            if (posicaoMinuto1 == 0 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Zero minuto";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 1)
+            {
+                minutoPorExtenso = "Um minuto";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Dois minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Três minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Quatro minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Cinco minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Seis minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Sete minutos";
+
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Oito minutos";
+            }
+            else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Nove minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Dez minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Onze minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Treze minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Quartoze minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Quinze minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Dezesseis minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Dezessete minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Dezoito minutos";
+            }
+            else if (posicaoMinuto1 == 1 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Dezenove minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Vinte minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 1)
+            {
+                minutoPorExtenso = "Vinte e uma minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Vinte e dois minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Vinte e três minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Vinte e quatro minutos";
+
+
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Vinte e cinco minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Vinte e seis minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Vinte e sete minutos";
+
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Vinte e oito minutos";
+            }
+            else if (posicaoMinuto1 == 2 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Vinte e nova minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Trinta minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 1)
+            {
+                minutoPorExtenso = "Trinta e um minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Trinta e dois minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Trinta e três minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Trinta e quatro minutos";
+
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Trinta e cinco minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Trinta e seis minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Trinta e sete minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Trinta e oito minutos";
+            }
+            else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Trinta e nove minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Quarenta minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 1)
+            {
+                minutoPorExtenso = "Quarenta um minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Quanrenta e dois minutoss";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Quarenta e três minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 4)
+            {
+                minutoPorExtenso = "Quarenta e quatro minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 5)
+            {
+                minutoPorExtenso = "Quarenta e cinco minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 6)
+            {
+                minutoPorExtenso = "Quarentae e seis minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 7)
+            {
+                minutoPorExtenso = "Quarenta e sete minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 8)
+            {
+                minutoPorExtenso = "Quarenta e oito minutos";
+            }
+            else if (posicaoMinuto1 == 4 && posicaoMinuto2 == 9)
+            {
+                minutoPorExtenso = "Quarenta e nove minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 0)
+            {
+                minutoPorExtenso = "Cinquenta minutos";
+
+
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 1)
+            {
+                minutoPorExtenso = "Vinte e cinco minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 2)
+            {
+                minutoPorExtenso = "Vinte e seis minutos";
+            }
+            else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 3)
+            {
+                minutoPorExtenso = "Vinte e sete minutos";
+
+            }
+
         }
 
         public void Obter_Segundo_Por_Extenso()
