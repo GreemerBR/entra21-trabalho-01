@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace entra21_trabalho_01.TrabalhoOrientacaoObjetos01.Tests.Questao02
+namespace TrabalhoOrientacaoObjetos01.Tests.Questao02
 {
     class _
     {
