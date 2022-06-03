@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
+    // Cristyan Alvir Alexandrino
     public class Relogio
     {
-        public DateTime Hora;
-        public string HoraInformada;
-        public string MinutoInformado;
-        public string SegundoInfomardo;
+        public DateTime Hora;       
 
-        public string Obter_Hora_Por_Extenso()
+        public string ObterHoraPorExtenso()
         {
 
-            HoraInformada = Convert.ToString(Hora.ToString("HH:mm:ss")); // .ToString("HH:mm:ss")
-            var posicaoHora1 = Convert.ToInt32(HoraInformada.Substring(0, 1)); //minuto: (3, 1) / segundo: (6, 1)
-            var posicaoHora2 = Convert.ToInt32(HoraInformada.Substring(1, 1)); //minuto: (4, 1) / segundo: (7, 1)
+            var horaInformada = Hora.ToString("HH");
+            var posicaoHora1 = Convert.ToInt32(horaInformada.Substring(0, 1)); 
+            var posicaoHora2 = Convert.ToInt32(horaInformada.Substring(1, 1)); 
             var horaExtenso = "";
 
             if (posicaoHora1 == 0 && posicaoHora2 == 0)
@@ -121,11 +119,11 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             return horaExtenso;
         }
 
-        public string Obter_Minuto_Por_Extenso()
+        public string ObterMinutoPorExtenso()
         {
-            MinutoInformado = Convert.ToString(Hora.ToString("HH:mm:ss"));
-            var posicaoMinuto1 = Convert.ToInt32(MinutoInformado.Substring(3, 1));
-            var posicaoMinuto2 = Convert.ToInt32(MinutoInformado.Substring(4, 1));
+            var minutoInformado = Hora.ToString("mm");
+            var posicaoMinuto1 = Convert.ToInt32(minutoInformado.Substring(0, 1));
+            var posicaoMinuto2 = Convert.ToInt32(minutoInformado.Substring(1, 1));
             var minutoPorExtenso = "";
             if (posicaoMinuto1 == 0 && posicaoMinuto2 == 0)
             {
@@ -158,7 +156,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 7)
             {
                 minutoPorExtenso = "Sete minutos";
-
             }
             else if (posicaoMinuto1 == 0 && posicaoMinuto2 == 8)
             {
@@ -331,7 +328,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 0)
             {
                 minutoPorExtenso = "Cinquenta minutos";
-
             }
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 1)
             {
@@ -344,7 +340,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 3)
             {
                 minutoPorExtenso = "Cinquenta e três minutos";
-
             }
             else if (posicaoMinuto1 == 5 && posicaoMinuto2 == 4)
             {
@@ -374,20 +369,17 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
         }
 
-        public string Obter_Segundo_Por_Extenso()
+        public string ObterSegundoPorExtenso()
         {
 
-            SegundoInfomardo = Convert.ToString(Hora.ToString("HH:mm:ss"));
-            var posicaoSegundo1 = Convert.ToUInt32(SegundoInfomardo.Substring(6, 1));
-            var posicaoSegundo2 = Convert.ToUInt32(SegundoInfomardo.Substring(7, 1));
+            var segundoInfomardo = Hora.ToString("ss");
+            var posicaoSegundo1 = Convert.ToUInt32(segundoInfomardo.Substring(0, 1));
+            var posicaoSegundo2 = Convert.ToUInt32(segundoInfomardo.Substring(1, 1));
             var segundoPorExtenso = "";
-
-
 
             if (posicaoSegundo1 == 0 && posicaoSegundo2 == 0)
             {
-                segundoPorExtenso = "Zero segundos";
-                
+                segundoPorExtenso = "Zero segundos";                
             }
             else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 1)
             {
@@ -416,7 +408,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 7)
             {
                 segundoPorExtenso = "Sete segundos";
-
             }
             else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 8)
             {
@@ -589,7 +580,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 0)
             {
                 segundoPorExtenso = "Cinquenta segundos";
-
             }
             else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 1)
             {
@@ -602,7 +592,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 3)
             {
                 segundoPorExtenso = "Cinquenta e três segundos";
-
             }
             else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 4)
             {
@@ -631,12 +620,15 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             return segundoPorExtenso;
         }
 
-        public void Obter_Hora_Completa_Por_Extenso()
+        public string ObterHoraCompletaPorExtenso()
         {
+            var hora = ObterHoraPorExtenso();
+            var minuto = ObterMinutoPorExtenso();
+            var segundo = ObterSegundoPorExtenso();
 
+            var horaCompletaPorExtenso = hora + " e " + minuto + " e " + segundo;
 
+            return horaCompletaPorExtenso;
         }
-
-
     }
 }

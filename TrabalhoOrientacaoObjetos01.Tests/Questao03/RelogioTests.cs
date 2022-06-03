@@ -9,9 +9,11 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
 {
+    // Cristyan Alvir Alexandrino
     public class RelogioTests
     {
         [Theory]
+        [InlineData(00, "Zero horas")]
         [InlineData(01, "Uma hora")]
         [InlineData(02, "Duas horas")]
         [InlineData(03, "Três horas")]
@@ -35,21 +37,18 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(21, "Vinte e uma horas")]
         [InlineData(22, "Vinte e duas horas")]
         [InlineData(23, "Vinte e três horas")]
-        public void Validar_HoraPorExtenso(int horaInformada, string horaPorExtenso)
+        public void Cenario01_Validar_ObterHoraPorExtenso(int horaInformada, string horaPorExtenso)
         {
-            //Arrange   
+            // Arrange   
             var relogio = new Relogio();
             relogio.Hora = DateTime.Today.AddHours(horaInformada);
 
-
-            //act
-            var horaTexto = relogio.Obter_Hora_Por_Extenso();
+            // Act
+            var horaTexto = relogio.ObterHoraPorExtenso();
 
             // Assert
             horaTexto.Should().Be(horaPorExtenso);
         }
-
-
 
         [Theory]
         [InlineData(00, "Zero minutos")]
@@ -112,17 +111,16 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(57, "Cinquenta e sete minutos")]
         [InlineData(58, "Cinquenta e oito minutos")]
         [InlineData(59, "Cinquenta e nove minutos")]
-
-        public void Validar_MinutoPorExtenso(int minutoInfomardo, string minutoPorExtenso)
+        public void Cenario02_Validar_ObterMinutoPorExtenso(int minutoInfomardo, string minutoPorExtenso)
         {
-            //Arrange
+            // Arrange
             var relogio = new Relogio();
             relogio.Hora = DateTime.Today.AddMinutes(minutoInfomardo);
 
-            //Act
-            var minutoTexto = relogio.Obter_Minuto_Por_Extenso();
+            // Act
+            var minutoTexto = relogio.ObterMinutoPorExtenso();
 
-            //Assert
+            // Assert
             minutoTexto.Should().Be(minutoPorExtenso);
         }
 
@@ -187,19 +185,41 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(57, "Cinquenta e sete segundos")]
         [InlineData(58, "Cinquenta e oito segundos")]
         [InlineData(59, "Cinquenta e nove segundos")]
-        public void Validar_SegundoPorExtenso(int segundosInfomardo, string segundosPorExtenso)
+        public void Cenario03_Validar_ObterSegundoPorExtenso(int segundoInfomardo, string segundosPorExtenso)
         {
-            //Arrange
+            // Arrange
             var relogio = new Relogio();
-            relogio.Hora = DateTime.Today.AddSeconds(segundosInfomardo);
+            relogio.Hora = DateTime.Today.AddSeconds(segundoInfomardo);
 
-            //act
-            var segundosTexto = relogio.Obter_Segundo_Por_Extenso();
+            // Act
+            var segundosTexto = relogio.ObterSegundoPorExtenso();
 
-            //Assert
+            // Assert
             segundosTexto.Should().Be(segundosPorExtenso);
-
         }
 
+        [Theory]
+        [InlineData(01, 15, 45, "Uma hora e Quinze minutos e Quarenta e cinco segundos")]
+        [InlineData(04, 25, 52, "Quatro horas e Vinte e cinco minutos e Cinquenta e dois segundos")]
+        [InlineData(05, 12, 33, "Cinco horas e Doze minutos e Trinta e três segundos")]
+        [InlineData(08, 40, 02, "Oito horas e Quarenta minutos e Dois segundos")]
+        [InlineData(10, 33, 59, "Dez horas e Trinta e três minutos e Cinquenta e nove segundos")]
+        [InlineData(13, 27, 10, "Treze horas e Vinte e sete minutos e Dez segundos")]
+        [InlineData(16, 16, 16, "Dezesseis horas e Dezesseis minutos e Dezesseis segundos")]
+        [InlineData(17, 05, 18, "Dezessete horas e Cinco minutos e Dezoito segundos")]
+        [InlineData(22, 17, 25, "Vinte e duas horas e Dezessete minutos e Vinte e cinco segundos")]
+        [InlineData(23, 59, 59, "Vinte e três horas e Cinquenta e nove minutos e Cinquenta e nove segundos")]
+        public void Cenario04_Validar_ObterHoraCompletaPorExtenso(int horaInformada, int minutoInformado, int segundoInformado, string horaCompletaPorExtenso)
+        {
+            // Arrange
+            var relogio = new Relogio();
+            relogio.Hora = DateTime.Today.AddHours(horaInformada).AddMinutes(minutoInformado).AddSeconds(segundoInformado);
+
+            // Act
+            var horaCompletaTexto = relogio.ObterHoraCompletaPorExtenso();
+
+            // Assert
+            horaCompletaTexto.Should().Be(horaCompletaPorExtenso);
+        }
     }
 }
