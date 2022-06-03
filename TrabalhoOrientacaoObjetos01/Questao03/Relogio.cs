@@ -11,6 +11,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         public DateTime Hora;
         public string HoraInformada;
         public string MinutoInformado;
+        public string SegundoInfomardo;
 
         public string Obter_Hora_Por_Extenso()
         {
@@ -266,7 +267,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
             else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 4)
             {
                 minutoPorExtenso = "Trinta e quatro minutos";
-                            }
+            }
             else if (posicaoMinuto1 == 3 && posicaoMinuto2 == 5)
             {
                 minutoPorExtenso = "Trinta e cinco minutos";
@@ -373,9 +374,261 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
         }
 
-        public void Obter_Segundo_Por_Extenso()
+        public string Obter_Segundo_Por_Extenso()
         {
 
+            SegundoInfomardo = Convert.ToString(Hora.ToString("HH:mm:ss"));
+            var posicaoSegundo1 = Convert.ToUInt32(SegundoInfomardo.Substring(6, 1));
+            var posicaoSegundo2 = Convert.ToUInt32(SegundoInfomardo.Substring(7, 1));
+            var segundoPorExtenso = "";
+
+
+
+            if (posicaoSegundo1 == 0 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Zero segundos";
+                
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Um segundo";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Dois segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Três segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Quatro segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Cinco segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Seis segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Sete segundos";
+
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Oito segundos";
+            }
+            else if (posicaoSegundo1 == 0 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Nove segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Dez segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Onze segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Doze segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Treze segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Quatorze segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Quinze segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Dezesseis segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Dezessete segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Dezoito segundos";
+            }
+            else if (posicaoSegundo1 == 1 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Dezenove segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Vinte segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Vinte e um segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Vinte e dois segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Vinte e três segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Vinte e quatro segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Vinte e cinco segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Vinte e seis segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Vinte e sete segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Vinte e oito segundos";
+            }
+            else if (posicaoSegundo1 == 2 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Vinte e nove segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Trinta segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Trinta e um segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Trinta e dois segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Trinta e três segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Trinta e quatro segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Trinta e cinco segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Trinta e seis segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Trinta e sete segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Trinta e oito segundos";
+            }
+            else if (posicaoSegundo1 == 3 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Trinta e nove segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Quarenta segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Quarenta e um segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Quarenta e dois segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Quarenta e três segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Quarenta e quatro segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Quarenta e cinco segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Quarenta e seis segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Quarenta e sete segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Quarenta e oito segundos";
+            }
+            else if (posicaoSegundo1 == 4 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Quarenta e nove segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 0)
+            {
+                segundoPorExtenso = "Cinquenta segundos";
+
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 1)
+            {
+                segundoPorExtenso = "Cinquenta e um segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 2)
+            {
+                segundoPorExtenso = "Cinquenta e dois segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 3)
+            {
+                segundoPorExtenso = "Cinquenta e três segundos";
+
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 4)
+            {
+                segundoPorExtenso = "Cinquenta e quatro segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 5)
+            {
+                segundoPorExtenso = "Cinquenta e cinco segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 6)
+            {
+                segundoPorExtenso = "Cinquenta e seis segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 7)
+            {
+                segundoPorExtenso = "Cinquenta e sete segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 8)
+            {
+                segundoPorExtenso = "Cinquenta e oito segundos";
+            }
+            else if (posicaoSegundo1 == 5 && posicaoSegundo2 == 9)
+            {
+                segundoPorExtenso = "Cinquenta e nove segundos";
+            }
+            return segundoPorExtenso;
         }
 
         public void Obter_Hora_Completa_Por_Extenso()
