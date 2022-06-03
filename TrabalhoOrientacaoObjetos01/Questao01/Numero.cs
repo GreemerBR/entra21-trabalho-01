@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 {
+    // Gregory Viegas Zimmer
     public class Numero
     {
         public double Valor;
@@ -330,7 +331,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
             }
 
-
             if (dezena == "0")
             {
                 dezenaPorExtenso = "Este número não possui dezena.";
@@ -545,6 +545,11 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             var unidadePorExtenso = ObterUnidadePorExtenso();
             var decimalPorExtenso = ObterDecimalPorExtenso().Replace("décimos", "");
 
+            var espacoUm = " ";
+            var espacoDois = " e ";
+            var espacoTres = " e ";
+            var virgula = " vírgula ";
+
             if (centenaPorExtenso == "Cem" && (dezenaPorExtenso != "Zero" || unidadePorExtenso != "Zero"))
             {
                 centenaPorExtenso = "Cento";
@@ -552,30 +557,100 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
             if (milharPorExtenso == "Zero" || milharPorExtenso == "Este número não possui milhar.")
             {
-                milharPorExtenso = "";                
+                milharPorExtenso = "";
+                espacoUm = "";
             }
 
             if (centenaPorExtenso == "Zero" || centenaPorExtenso == "Este número não possui centena.")
             {
                 centenaPorExtenso = "";
+                espacoUm = "";
+                espacoDois = "";
             }
 
             if (dezenaPorExtenso == "Zero" || dezenaPorExtenso == "Este número não possui dezena.")
             {
                 dezenaPorExtenso = "";
+                espacoUm = "";
+                espacoDois = "";
+                espacoTres = "";
             }
 
             if (unidadePorExtenso == "Zero")
             {
                 unidadePorExtenso = "";
+                espacoUm = "";
+                espacoDois = "";
+                espacoTres = "";
             }
 
             if (decimalPorExtenso == "Zero décimos.")
             {
-                decimalPorExtenso = "";
+                decimalPorExtenso = "";                
+                virgula = "";
             }
 
-            numeroCompletoPorExtenso = milharPorExtenso + " " + centenaPorExtenso + " e " + dezenaPorExtenso + " e " + unidadePorExtenso + " vírgula " + decimalPorExtenso;
+            if (dezenaPorExtenso == "Dez")
+            {
+                if (unidadePorExtenso == "Zero")
+                {
+                    dezenaPorExtenso = "Dez";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Um")
+                {
+                    dezenaPorExtenso = "Onze";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Dois")
+                {
+                    dezenaPorExtenso = "Doze";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Três")
+                {
+                    dezenaPorExtenso = "Treze";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Quatro")
+                {
+                    dezenaPorExtenso = "Quatorze";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Cinco")
+                {
+                    dezenaPorExtenso = "Quinze";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Seis")
+                {
+                    dezenaPorExtenso = "Dezesseis";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Sete")
+                {
+                    dezenaPorExtenso = "Dezessete";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Oito")
+                {
+                    dezenaPorExtenso = "Dezoito";
+                    unidadePorExtenso = "";
+                }
+                else if (unidadePorExtenso == "Nove")
+                {
+                    dezenaPorExtenso = "Dezenove";
+                    unidadePorExtenso = "";
+                }
+            }
+            
+            if ((milharPorExtenso == "Zero" || milharPorExtenso == "Este número não possui milhar.") && (centenaPorExtenso == "Zero" || centenaPorExtenso == "Este número não possui centena.") 
+                && (dezenaPorExtenso == "Zero" || dezenaPorExtenso == "Este número não possui dezena.") && unidadePorExtenso == "Zero")
+            {
+                unidadePorExtenso = "Zero";
+            }
+
+            numeroCompletoPorExtenso = milharPorExtenso + espacoUm + centenaPorExtenso + espacoDois + dezenaPorExtenso + espacoTres + unidadePorExtenso + virgula + decimalPorExtenso;
 
             return numeroCompletoPorExtenso;
         }

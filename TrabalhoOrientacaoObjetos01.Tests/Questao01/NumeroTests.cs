@@ -9,6 +9,7 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao01
 {
+    // Gregory Viegas Zimmer
     public class NumeroTests
     {
         [Theory]
@@ -430,6 +431,25 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
 
             // Assert
             numeroPorExtenso.Should().Be(milharPorExtenso);
+        }
+
+        [Theory]
+        [InlineData(1.45, "Um vírgula Quarenta e cinco ")]
+        [InlineData(8.14, "Oito vírgula Quatorze ")]
+        [InlineData(40, "Quarenta vírgula Zero ")]
+        [InlineData(236.15, "Duzentos e Trinta e Seis vírgula Quinze ")]
+        [InlineData(1687, "Mil Seissentos e Oitenta e Sete vírgula Zero ")]
+        public void Cenario06_Validar_ObterNumeroCompletoPorExtenso(double numeroInformado, string numeroPorExtensoEsperado)
+        {
+            // Arrange
+            var numero = new Numero();
+            numero.Valor = numeroInformado;
+
+            // Act
+            var numeroPorExtenso = numero.ObterNumeroCompletoPorExtenso();
+
+            // Assert
+            numeroPorExtenso.Should().Be(numeroPorExtensoEsperado);
         }
     }
 }
