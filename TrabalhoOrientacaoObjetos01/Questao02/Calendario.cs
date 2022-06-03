@@ -11,42 +11,42 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
         public DateTime Data;
         public string ObterMesPorExtenso()
         {
-            var mes = Convert.ToString(Data.Month);
-            var primeiraParteMes = mes.Substring(0, 1);
-            var segundaParteMes = mes.Substring(1, 1);
+            var mes = Convert.ToString(Data.ToString("MM"));
+            var primeiraParteMes =Convert.ToInt32( mes.Substring(0, 1));
+            var segundaParteMes = Convert.ToInt32(mes.Substring(1, 1));
             var mesExtenso = "";
 
-            if (primeiraParteMes == "0")
+            if (primeiraParteMes == 0)
             {
-                if (segundaParteMes == "1")
+                if (segundaParteMes == 1)
                 {
                     mesExtenso = "Janeiro";
                 }
-                else if (segundaParteMes == "2")
+                else if (segundaParteMes == 2)
                 {
                     mesExtenso = "Fevereiro";
                 }
-                else if (segundaParteMes == "3")
+                else if (segundaParteMes == 3)
                 {
                     mesExtenso = "Março";
                 }
-                else if (segundaParteMes == "4")
+                else if (segundaParteMes == 4)
                 {
                     mesExtenso = "Abril";
                 }
-                else if (segundaParteMes == "5")
+                else if (segundaParteMes == 5)
                 {
                     mesExtenso = "Maio";
                 }
-                else if (segundaParteMes == "6")
+                else if (segundaParteMes == 6)
                 {
                     mesExtenso = "Junho";
                 }
-                else if (segundaParteMes == "7")
+                else if (segundaParteMes == 7)
                 {
                     mesExtenso = "Julho";
                 }
-                else if (segundaParteMes == "8")
+                else if (segundaParteMes == 8)
                 {
                     mesExtenso = "Agosto";
                 }
@@ -56,17 +56,17 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 }
             }
 
-            if (primeiraParteMes == "1")
+            if (primeiraParteMes == 1)
             {
-                if (segundaParteMes == "0")
+                if (segundaParteMes == 0)
                 {
                     mesExtenso = "Outubro";
                 }
-                else if (segundaParteMes == "1")
+                else if (segundaParteMes == 1)
                 {
                     mesExtenso = "Novembro";
                 }
-                else if (segundaParteMes == "2")
+                else if (segundaParteMes == 2)
                 {
                     mesExtenso = "Dezembro";
                 }
