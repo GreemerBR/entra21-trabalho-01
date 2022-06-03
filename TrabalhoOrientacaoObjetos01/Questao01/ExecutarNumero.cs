@@ -109,14 +109,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     Console.WriteLine(dezenaPorExtenso);
                 }
 
-                if (opcaoDesejada == 3)
-                {
-                    Console.Clear();
-                    var dezenaPorExtenso = numero.ObterDezenaPorExtenso();
-                    Console.WriteLine($"Número informado: {numeroInformado}");
-                    Console.WriteLine(dezenaPorExtenso);
-                }
-
                 if (opcaoDesejada == 4)
                 {
                     Console.Clear();
