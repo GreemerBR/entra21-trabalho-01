@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 {
     // Gregory Viegas Zimmer
-    public class ExecutarNumero 
+    public class ExecutarNumero
     {
         public void Executar()
         {
@@ -21,7 +21,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             {
                 try
                 {
-                    Console.Write("Por favor informe um positivo número menor ou igual a 9999,99 (com até duas casas decimais): ");
+                    Console.Write("Por favor informe um valor positivo entre 0 e 9999,99 reais (com até duas casas decimais): ");
                     numeroInformado = Convert.ToDouble(Console.ReadLine());
 
                     if (numeroInformado >= 0)
@@ -89,6 +89,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var decimalPorExtenso = numero.ObterDecimalPorExtenso();
+                    if (decimalPorExtenso != "Zero")
+                    {
+                        decimalPorExtenso = decimalPorExtenso + " centavos";
+                    }
                     Console.WriteLine($"Número informado: {numeroInformado}");
                     Console.WriteLine(decimalPorExtenso);
                 }
@@ -97,6 +101,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var unidadePorExtenso = numero.ObterUnidadePorExtenso();
+                    if (unidadePorExtenso != "Zero")
+                    {
+                       unidadePorExtenso = unidadePorExtenso + " real(is)";
+                    }
                     Console.WriteLine($"Número informado: {numeroInformado}");
                     Console.WriteLine(unidadePorExtenso);
                 }
@@ -105,6 +113,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var dezenaPorExtenso = numero.ObterDezenaPorExtenso();
+                    if (dezenaPorExtenso != "Zero")
+                    {
+                        dezenaPorExtenso = dezenaPorExtenso + " reais";
+                    }
                     Console.WriteLine($"Número informado: {numeroInformado}");
                     Console.WriteLine(dezenaPorExtenso);
                 }
@@ -113,6 +125,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var centenaPorExtenso = numero.ObterCentenaPorExtenso();
+                    if (centenaPorExtenso != "Zero")
+                    {
+                        centenaPorExtenso = centenaPorExtenso + " reais";
+                    }
                     Console.WriteLine($"Número informado: {numeroInformado}");
                     Console.WriteLine(centenaPorExtenso);
                 }
@@ -121,6 +137,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var milharPorExtenso = numero.ObterUnidadeDeMilharPorExtenso();
+                    if (milharPorExtenso != "Zero")
+                    {
+                        milharPorExtenso = milharPorExtenso + " reais";
+                    }
                     Console.WriteLine($"Número informado: {numeroInformado}");
                     Console.WriteLine(milharPorExtenso);
                 }

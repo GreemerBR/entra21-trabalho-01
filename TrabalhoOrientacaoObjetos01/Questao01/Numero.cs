@@ -17,7 +17,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             var textoPrimeiraParte = "";
             var textoSegundaParte = "";
 
-            var numeroInformado = Convert.ToString(Valor);
+            var numeroInformado = Valor.ToString();
 
             var possuiVirgula = numeroInformado.Contains(',');
 
@@ -43,61 +43,61 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Zero décimos";
+                        decimalPorExtenso = "Zero";
                     }
                     else
                     {
-                        textoPrimeiraParte = "Zero ";
+                        textoPrimeiraParte = "";
                     }
                 }
                 else if (primeiraParteDecimal == "1")
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Dez décimos";
+                        decimalPorExtenso = "Dez";
                     }
                     else if (segundaParteDecimal == "1")
                     {
-                        decimalPorExtenso = "Onze décimos";
+                        decimalPorExtenso = "Onze";
                     }
                     else if (segundaParteDecimal == "2")
                     {
-                        decimalPorExtenso = "Doze décimos";
+                        decimalPorExtenso = "Doze";
                     }
                     else if (segundaParteDecimal == "3")
                     {
-                        decimalPorExtenso = "Treze décimos";
+                        decimalPorExtenso = "Treze";
                     }
                     else if (segundaParteDecimal == "4")
                     {
-                        decimalPorExtenso = "Quatorze décimos";
+                        decimalPorExtenso = "Quatorze";
                     }
                     else if (segundaParteDecimal == "5")
                     {
-                        decimalPorExtenso = "Quinze décimos";
+                        decimalPorExtenso = "Quinze";
                     }
                     else if (segundaParteDecimal == "6")
                     {
-                        decimalPorExtenso = "Dezesseis décimos";
+                        decimalPorExtenso = "Dezesseis";
                     }
                     else if (segundaParteDecimal == "7")
                     {
-                        decimalPorExtenso = "Dezessete décimos";
+                        decimalPorExtenso = "Dezessete";
                     }
                     else if (segundaParteDecimal == "8")
                     {
-                        decimalPorExtenso = "Dezoito décimos";
+                        decimalPorExtenso = "Dezoito";
                     }
                     else
                     {
-                        decimalPorExtenso = "Dezenove décimos";
+                        decimalPorExtenso = "Dezenove";
                     }
                 }
                 else if (primeiraParteDecimal == "2")
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Vinte décimos";
+                        decimalPorExtenso = "Vinte";
                     }
                     else
                     {
@@ -108,7 +108,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Trinta décimos";
+                        decimalPorExtenso = "Trinta";
                     }
                     else
                     {
@@ -119,7 +119,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Quarenta décimos";
+                        decimalPorExtenso = "Quarenta";
                     }
                     else
                     {
@@ -130,7 +130,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Cinquenta décimos";
+                        decimalPorExtenso = "Cinquenta";
                     }
                     else
                     {
@@ -141,7 +141,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Sessenta décimos";
+                        decimalPorExtenso = "Sessenta";
                     }
                     else
                     {
@@ -152,7 +152,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Setenta décimos";
+                        decimalPorExtenso = "Setenta";
                     }
                     else
                     {
@@ -163,7 +163,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Oitenta décimos";
+                        decimalPorExtenso = "Oitenta";
                     }
                     else
                     {
@@ -174,7 +174,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     if (segundaParteDecimal == "0")
                     {
-                        decimalPorExtenso = "Noventa décimos";
+                        decimalPorExtenso = "Noventa";
                     }
                     else
                     {
@@ -184,49 +184,56 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
                 if (segundaParteDecimal == "1")
                 {
-                    textoSegundaParte = "um décimos";
+                    textoSegundaParte = "um";
                 }
                 else if (segundaParteDecimal == "2")
                 {
-                    textoSegundaParte = "dois décimos";
+                    textoSegundaParte = "dois";
                 }
                 else if (segundaParteDecimal == "3")
                 {
-                    textoSegundaParte = "três décimos";
+                    textoSegundaParte = "três";
                 }
                 else if (segundaParteDecimal == "4")
                 {
-                    textoSegundaParte = "quatro décimos";
+                    textoSegundaParte = "quatro";
                 }
                 else if (segundaParteDecimal == "5")
                 {
-                    textoSegundaParte = "cinco décimos";
+                    textoSegundaParte = "cinco";
                 }
                 else if (segundaParteDecimal == "6")
                 {
-                    textoSegundaParte = "seis décimos";
+                    textoSegundaParte = "seis";
                 }
                 else if (segundaParteDecimal == "7")
                 {
-                    textoSegundaParte = "sete décimos";
+                    textoSegundaParte = "sete";
                 }
                 else if (segundaParteDecimal == "8")
                 {
-                    textoSegundaParte = "oito décimos";
+                    textoSegundaParte = "oito";
                 }
                 else if (segundaParteDecimal == "9")
                 {
-                    textoSegundaParte = "nove décimos";
+                    textoSegundaParte = "nove";
                 }
 
                 if (decimalPorExtenso == "")
                 {
-                    decimalPorExtenso = textoPrimeiraParte + textoSegundaParte;
+                    if (textoPrimeiraParte != "")
+                    {
+                        decimalPorExtenso = textoPrimeiraParte + textoSegundaParte;
+                    }
+                    else
+                    {
+                        decimalPorExtenso = char.ToUpper(textoSegundaParte[0]) + textoSegundaParte.Substring(1);
+                    }
                 }
             }
             else
             {
-                decimalPorExtenso = "Zero décimos";
+                decimalPorExtenso = "Zero";
             }
 
             return decimalPorExtenso;
@@ -236,7 +243,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
         {
             var unidade = "";
 
-            var numeroInformado = Convert.ToString(Valor);
+            var numeroInformado = Valor.ToString();
 
             var possuiVirgula = numeroInformado.Contains(',');
 
@@ -302,7 +309,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             var dezena = "";
             var dezenaPorExtenso = "";
 
-            var numeroInformado = Convert.ToString(Valor);
+            var numeroInformado = Valor.ToString();
 
             var possuiVirgula = numeroInformado.Contains(',');
 
@@ -316,7 +323,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    dezenaPorExtenso = "Este número não possui dezena.";
+                    dezenaPorExtenso = "Zero";
                 }
             }
             else
@@ -327,13 +334,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    dezenaPorExtenso = "Este número não possui dezena.";
+                    dezenaPorExtenso = "Zero";
                 }
             }
 
             if (dezena == "0")
             {
-                dezenaPorExtenso = "Este número não possui dezena.";
+                dezenaPorExtenso = "Zero";
             }
             else if (dezena == "1")
             {
@@ -380,7 +387,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             var centena = "";
             var centenaPorExtenso = "";
 
-            var numeroInformado = Convert.ToString(Valor);
+            var numeroInformado = Valor.ToString();
 
             var possuiVirgula = numeroInformado.Contains(',');
 
@@ -394,7 +401,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    centenaPorExtenso = "Este número não possui centena.";
+                    centenaPorExtenso = "Zero";
                 }
             }
             else
@@ -405,14 +412,14 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    centenaPorExtenso = "Este número não possui centena.";
+                    centenaPorExtenso = "Zero";
                 }
             }
 
 
             if (centena == "0")
             {
-                centenaPorExtenso = "Este número não possui centena.";
+                centenaPorExtenso = "Zero";
             }
             else if (centena == "1")
             {
@@ -459,7 +466,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             var milhar = "";
             var milharPorExtenso = "";
 
-            var numeroInformado = Convert.ToString(Valor);
+            var numeroInformado = Valor.ToString();
 
             var possuiVirgula = numeroInformado.Contains(',');
 
@@ -473,7 +480,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    milharPorExtenso = "Este número não possui milhar.";
+                    milharPorExtenso = "Zero";
                 }
             }
             else
@@ -484,14 +491,14 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 }
                 else
                 {
-                    milharPorExtenso = "Este número não possui milhar.";
+                    milharPorExtenso = "Zero";
                 }
             }
 
 
             if (milhar == "0")
             {
-                milharPorExtenso = "Este número não possui milhar.";
+                milharPorExtenso = "Zero";
             }
             else if (milhar == "1")
             {
@@ -535,59 +542,40 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
 
         public string ObterNumeroCompletoPorExtenso()
         {
-            var numeroCompletoPorExtenso = "";
-
-            var numeroInformado = Convert.ToString(Valor);
-
             var milharPorExtenso = ObterUnidadeDeMilharPorExtenso();
             var centenaPorExtenso = ObterCentenaPorExtenso();
             var dezenaPorExtenso = ObterDezenaPorExtenso();
             var unidadePorExtenso = ObterUnidadePorExtenso();
-            var decimalPorExtenso = ObterDecimalPorExtenso().Replace("décimos", "");
-
-            var espacoUm = " ";
-            var espacoDois = " e ";
-            var espacoTres = " e ";
-            var virgula = " vírgula ";
+            var decimalPorExtenso = ObterDecimalPorExtenso() + " centavo(s)";
 
             if (centenaPorExtenso == "Cem" && (dezenaPorExtenso != "Zero" || unidadePorExtenso != "Zero"))
             {
                 centenaPorExtenso = "Cento";
             }
 
-            if (milharPorExtenso == "Zero" || milharPorExtenso == "Este número não possui milhar.")
+            if (milharPorExtenso == "Zero")
             {
                 milharPorExtenso = "";
-                espacoUm = "";
             }
 
-            if (centenaPorExtenso == "Zero" || centenaPorExtenso == "Este número não possui centena.")
+            if (centenaPorExtenso == "Zero")
             {
                 centenaPorExtenso = "";
-                espacoUm = "";
-                espacoDois = "";
             }
 
-            if (dezenaPorExtenso == "Zero" || dezenaPorExtenso == "Este número não possui dezena.")
+            if (dezenaPorExtenso == "Zero")
             {
                 dezenaPorExtenso = "";
-                espacoUm = "";
-                espacoDois = "";
-                espacoTres = "";
             }
 
             if (unidadePorExtenso == "Zero")
             {
                 unidadePorExtenso = "";
-                espacoUm = "";
-                espacoDois = "";
-                espacoTres = "";
             }
 
-            if (decimalPorExtenso == "Zero décimos.")
+            if (decimalPorExtenso == "Zero centavo(s)")
             {
-                decimalPorExtenso = "";                
-                virgula = "";
+                decimalPorExtenso = "";
             }
 
             if (dezenaPorExtenso == "Dez")
@@ -643,14 +631,40 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     unidadePorExtenso = "";
                 }
             }
-            
-            if ((milharPorExtenso == "Zero" || milharPorExtenso == "Este número não possui milhar.") && (centenaPorExtenso == "Zero" || centenaPorExtenso == "Este número não possui centena.") 
-                && (dezenaPorExtenso == "Zero" || dezenaPorExtenso == "Este número não possui dezena.") && unidadePorExtenso == "Zero")
+
+            if (milharPorExtenso != "")
             {
-                unidadePorExtenso = "Zero";
+                milharPorExtenso = milharPorExtenso + " ";
             }
 
-            numeroCompletoPorExtenso = milharPorExtenso + espacoUm + centenaPorExtenso + espacoDois + dezenaPorExtenso + espacoTres + unidadePorExtenso + virgula + decimalPorExtenso;
+            if (centenaPorExtenso != "" && (dezenaPorExtenso != "" || unidadePorExtenso != ""))
+            {
+                centenaPorExtenso = centenaPorExtenso + " e ";
+            }
+
+            if (dezenaPorExtenso != "" && unidadePorExtenso != "")
+            {
+                dezenaPorExtenso = dezenaPorExtenso + " e ";
+            }
+
+            var numeroCompletoPorExtenso = "";
+
+            if (milharPorExtenso == "" && centenaPorExtenso == "" && dezenaPorExtenso == "" && unidadePorExtenso == "" && decimalPorExtenso == "")
+            {
+                numeroCompletoPorExtenso = "Zero reais";
+            }
+            else if (milharPorExtenso == "" && centenaPorExtenso == "" && dezenaPorExtenso == "" && unidadePorExtenso == "" && decimalPorExtenso != "")
+            {
+                numeroCompletoPorExtenso = decimalPorExtenso;
+            }
+            else if (milharPorExtenso != "" && centenaPorExtenso != "" && dezenaPorExtenso != "" && unidadePorExtenso != "" && decimalPorExtenso == "")
+            {
+                numeroCompletoPorExtenso = milharPorExtenso + centenaPorExtenso + dezenaPorExtenso + unidadePorExtenso + " real(is)";
+            }
+            else
+            {
+                numeroCompletoPorExtenso = milharPorExtenso + centenaPorExtenso + dezenaPorExtenso + unidadePorExtenso + " real(is) e " + decimalPorExtenso;
+            }
 
             return numeroCompletoPorExtenso;
         }
