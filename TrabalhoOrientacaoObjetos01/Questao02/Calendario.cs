@@ -16,57 +16,52 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             var segundaParteMes = Convert.ToInt32(mes.Substring(1, 1));
             var mesExtenso = "";
 
-            if (primeiraParteMes == 0)
-            {
-                if (segundaParteMes == 1)
+                if (primeiraParteMes == 0 && segundaParteMes == 1)
                 {
                     mesExtenso = "Janeiro";
                 }
-                else if (segundaParteMes == 2)
+                else if (primeiraParteMes == 0 && segundaParteMes == 2)
                 {
                     mesExtenso = "Fevereiro";
                 }
-                else if (segundaParteMes == 3)
+                else if (primeiraParteMes == 0 && segundaParteMes == 3)
                 {
                     mesExtenso = "Março";
                 }
-                else if (segundaParteMes == 4)
+                else if (primeiraParteMes == 0 && segundaParteMes == 4)
                 {
                     mesExtenso = "Abril";
                 }
-                else if (segundaParteMes == 5)
+                else if (primeiraParteMes == 0 && segundaParteMes == 5)
                 {
                     mesExtenso = "Maio";
                 }
-                else if (segundaParteMes == 6)
+                else if (primeiraParteMes == 0 && segundaParteMes == 6)
                 {
                     mesExtenso = "Junho";
                 }
-                else if (segundaParteMes == 7)
+                else if (primeiraParteMes == 0 && segundaParteMes == 7)
                 {
                     mesExtenso = "Julho";
                 }
-                else if (segundaParteMes == 8)
+                else if (primeiraParteMes == 0 && segundaParteMes == 8)
                 {
                     mesExtenso = "Agosto";
                 }
-                else
+                else if(segundaParteMes == 0 && segundaParteMes == 9)
                 {
                     mesExtenso = "Setembro";
                 }
-            }
 
-            if (primeiraParteMes == 1)
+            if (primeiraParteMes == 1 && segundaParteMes == 0)
             {
-                if (segundaParteMes == 0)
-                {
                     mesExtenso = "Outubro";
                 }
-                else if (segundaParteMes == 1)
+                else if (primeiraParteMes == 1 && segundaParteMes == 1)
                 {
                     mesExtenso = "Novembro";
                 }
-                else if (segundaParteMes == 2)
+                else if (primeiraParteMes == 1 && segundaParteMes == 2)
                 {
                     mesExtenso = "Dezembro";
                 }
@@ -82,39 +77,39 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             var diaExtenso = "";
             if (primeiraParteDia == "0")
             {
-                if (primeiraParteDia == "1")
+                if (primeiraParteDia == 0 && segundaParteDia == 1)
                 {
                     diaExtenso = "Dia Primeiro";
                 }
-                else if (primeiraParteDia == "2")
+                else if (primeiraParteDia == 0 && segundaParteDia == 2)
                 {
                     diaExtenso = "Dia Dois";
                 }
-                else if (primeiraParteDia == "3")
+                else if (primeiraParteDia == 0 && segundaParteDia == 3)
                 {
                     diaExtenso = "Dia Três";
                 }
-                else if (primeiraParteDia == "4")
+                else if (primeiraParteDia == 0 && segundaParteDia == 4)
                 {
                     diaExtenso = "Dia Quatro";
                 }
-                else if (primeiraParteDia == "5")
+                else if (primeiraParteDia == 0 && segundaParteDia == 5)
                 {
                     diaExtenso = "Dia Cinco";
                 }
-                else if (primeiraParteDia == "6")
+                else if (primeiraParteDia == 0 && segundaParteDia == 6)
                 {
                     diaExtenso = "Dia Seis";
                 }
-                else if (primeiraParteDia == "7")
+                else if (primeiraParteDia == 0 && segundaParteDia == 7)
                 {
                     diaExtenso = "Dia Sete";
                 }
-                else if (primeiraParteDia == "8")
+                else if (primeiraParteDia == 0 && segundaParteDia == 8)
                 {
                     diaExtenso = "Dia Oito";
                 }
-                else
+                else if(primeiraParteDia == 0 && segundaParteDia == 9)
                 {
                     diaExtenso = "Dia Nove";
                 }
@@ -122,102 +117,95 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
 
             }
 
-            if (primeiraParteDia == "1")
-            {
-                if (segundaParteDia == "0")
+                if ( && segundaParteDia == 0)
                 {
                     diaExtenso = "Dia Dez";
                 }
-                else if (segundaParteDia == "1")
+                else if (primeiraParteDia == 1 && segundaParteDia == 1)
                 {
                     diaExtenso = "Dia Onze";
                 }
-                else if (segundaParteDia == "2")
+                else if (primeiraParteDia == 1 && segundaParteDia == 2)
                 {
                     diaExtenso = "Dia Doze";
                 }
-                else if (segundaParteDia == "3")
+                else if (primeiraParteDia == 1 && segundaParteDia == 3)
                 {
                     diaExtenso = "Dia Treze";
                 }
-                else if (segundaParteDia == "4")
+                else if (primeiraParteDia == 1 && segundaParteDia == 4)
                 {
                     diaExtenso = "Dia Catorze";
                 }
-                else if (segundaParteDia == "5")
+                else if (primeiraParteDia == 1 && segundaParteDia == 5)
                 {
                     diaExtenso = "Dia Quinze";
                 }
-                else if (segundaParteDia == "6")
+                else if (primeiraParteDia == 1 && segundaParteDia == 6)
                 {
                     diaExtenso = "Dia Dezesseis";
                 }
-                else if (segundaParteDia == "7")
+                else if (primeiraParteDia == 1 && segundaParteDia == 7)
                 {
                     diaExtenso = "Dia Dezessete";
                 }
-                else if (segundaParteDia == "8")
+                else if (primeiraParteDia == 1 && segundaParteDia == 8)
                 {
                     diaExtenso = "Dia Dezoito";
                 }
-                else
+                else if (primeiraParteDia == 1 && segundaParteDia == 9)
                 {
                     diaExtenso = "Dia Dezenove";
                 }
             }
-            if (primeiraParteDia == "2")
-            {
-                if (segundaParteDia == "0")
-                {
+            if (primeiraParteDia == 2 && segundaParteDia == 0)
+                  {
                     diaExtenso = "Dia Vinte";
-                }
-                else if (segundaParteDia == "1")
+                   }
+                else if (primeiraParteDia == 2 segundaParteDia == 1)
                 {
                     diaExtenso = "Dia Vinte e Um";
                 }
-                else if (segundaParteDia == "2")
+                else if (primeiraParteDia == 2 && segundaParteDia == 2)
                 {
                     diaExtenso = "Dia Vinte e Dois";
                 }
-                else if (segundaParteDia == "3")
+                else if (primeiraParteDia == 2 && segundaParteDia == 3)
                 {
                     diaExtenso = "Dia Vinte e Três";
                 }
-                else if (segundaParteDia == "4")
+                else if (primeiraParteDia == 2 && segundaParteDia == 4)
                 {
                     diaExtenso = "Dia Vinte e Quatro";
                 }
-                else if (segundaParteDia == "5")
+                else if (primeiraParteDia == 2 && segundaParteDia == 5)
                 {
                     diaExtenso = "Dia Vinte e Cinco";
                 }
-                else if (segundaParteDia == "6")
+                else if (primeiraParteDia == 2 && segundaParteDia == 6)
                 {
                     diaExtenso = "Dia Vinte e Seis";
                 }
-                else if (segundaParteDia == "7")
+                else if (primeiraParteDia == 2 && segundaParteDia == 7)
                 {
                     diaExtenso = "Dia Vinte e Sete";
                 }
-                else if (segundaParteDia == "8")
+                else if (primeiraParteDia == 2 && segundaParteDia == 8)
                 {
                     diaExtenso = "Dia Vinte e Oito";
                 }
-                else
+                else if(primeiraParteDia == 2 && segundaParteDia == 9)
                 {
                     diaExtenso = "Dia Vinte e Nove";
                 }
-                if (primeiraParteDia == "3")
+                if (primeiraParteDia == 3 && segundaParteDia == 0)
                 {
-                    if (segundaParteDia == "0")
-                    {
                         diaExtenso = "Dia Trinta";
-                    }
-                    else if (segundaParteDia == "1")
+                }
+                else if (primeiraParteDia == 3 segundaParteDia == 1)
                     {
                         diaExtenso = "Dia Trinta e Um";
                     }
-                }
             }
             return diaExtenso;
         }
@@ -279,7 +267,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             {
                 anoSegundaParteExtenso = "Cem";
             }
-
 
             if (terceiraParteAno == "9")
             {
