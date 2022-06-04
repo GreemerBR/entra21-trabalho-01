@@ -21,7 +21,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             {
                 try
                 {
-                    Console.Write("Por favor informe uma data (yyyy/mm/dd): ");
+                    Console.Write("Por favor informe uma data (dd/mm/yyyy): ");
                     dataInformada = Convert.ToDateTime(Console.ReadLine());
 
                     dataInformadaValida = true;
