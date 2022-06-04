@@ -13,8 +13,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
         public string ObterMesPorExtenso()
         {
             var mes = Data.ToString("MM");
+
             var primeiraParteMes = mes.Substring(0, 1);
             var segundaParteMes = mes.Substring(1, 1);
+
             var mesExtenso = "";
 
             if (primeiraParteMes == "0")
@@ -75,12 +77,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
             return mesExtenso;
         }
 
-
         public string ObterDiaPorExtenso()
         {
             var dia = Data.ToString("dd");
+
             var primeiraParteDia = dia.Substring(0, 1);
             var segundaParteDia = dia.Substring(1, 1);
+
             var diaExtenso = "";
 
             if (primeiraParteDia == "0")
@@ -160,7 +163,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     diaExtenso = "Dia Dezoito";
                 }
-                else
+                else if (segundaParteDia == "9")
                 {
                     diaExtenso = "Dia Dezenove";
                 }
@@ -203,7 +206,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     diaExtenso = "Dia Vinte e Oito";
                 }
-                else
+                else if (segundaParteDia == "9")
                 {
                     diaExtenso = "Dia Vinte e Nove";
                 }
@@ -248,9 +251,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Mil ";
                 }
             }
             else if (primeiraParteAno == "2")
@@ -259,9 +266,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Dois mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Dois mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Dois mil ";
                 }
             }
             else if (primeiraParteAno == "3")
@@ -270,9 +281,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Três mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Três mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Três mil ";
                 }
             }
             else if (primeiraParteAno == "4")
@@ -281,9 +296,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Quatro mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Quatro mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Quatro mil ";
                 }
             }
             else if (primeiraParteAno == "5")
@@ -292,9 +311,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Cinco mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Cinco mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Cinco mil ";
                 }
             }
             else if (primeiraParteAno == "6")
@@ -303,9 +326,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Seis mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Seis mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Seis mil ";
                 }
             }
             else if (primeiraParteAno == "7")
@@ -314,9 +341,13 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Sete mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Sete mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Sete mil ";
                 }
             }
             else if (primeiraParteAno == "8")
@@ -325,20 +356,28 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoPrimeiraParteExtenso = "Oito mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Oito mil e ";
                 }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Oito mil ";
+                }
             }
-            else
+            else if (primeiraParteAno == "9")
             {
                 if (segundaParteAno == "0" && terceiraParteAno == "0" && quartaParteAno == "0")
                 {
                     anoPrimeiraParteExtenso = "Nove mil";
                 }
-                else
+                else if (segundaParteAno == "0" || (terceiraParteAno == "0" && quartaParteAno == "0"))
                 {
                     anoPrimeiraParteExtenso = "Nove mil e ";
+                }
+                else
+                {
+                    anoPrimeiraParteExtenso = "Nove mil ";
                 }
             }
 
@@ -434,7 +473,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                     anoSegundaParteExtenso = "Oitocentos";
                 }
             }
-            else
+            else if (segundaParteAno == "9")
             {
                 if (terceiraParteAno != "0" || quartaParteAno != "0")
                 {
@@ -484,7 +523,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     anoTerceiraParteExtenso = "Dezoito";
                 }
-                else
+                else if (quartaParteAno == "9")
                 {
                     anoTerceiraParteExtenso = "Dezenove";
                 }
@@ -566,7 +605,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                     anoTerceiraParteExtenso = "Oitenta e ";
                 }
             }
-            else
+            else if (terceiraParteAno == "9")
             {
                 if (quartaParteAno == "0")
                 {
