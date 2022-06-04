@@ -8,7 +8,7 @@ while (opcaoDesejada != 4)
 {
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine(@"
-------MENU------
+--MENU PRINCIPAL--
 1 - Questão 01
 2 - Questão 02
 3 - Questão 03
