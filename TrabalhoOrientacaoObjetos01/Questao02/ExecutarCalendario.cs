@@ -11,78 +11,98 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
     {
         public void Executar()
         {
-            //             var opcaoDesejada = 0;
-
-            //            while (opcaoDesejada != 5)
-            //            {
-            //                Console.ForegroundColor = ConsoleColor.Red;
-            //                Console.WriteLine(@"
-            //------------------MENU------------------
-            //1 - Obter hora por extenso
-            //2 - Obter minuto por extenso
-            //3 - Obter segundo por extenso
-            //4 - Obter hora completo por extenso
-            //5 - SAIR
-            //");
-
-            //                try
-            //                {
-            //                    Console.Write("Digite uma opção: ");
-            //                    opcaoDesejada = Convert.ToInt32(Console.ReadLine());
-
-            //                    if (opcaoDesejada < 0 || (opcaoDesejada != 1 && opcaoDesejada != 2 && opcaoDesejada != 3 && opcaoDesejada != 4 && opcaoDesejada != 5))
-            //                    {
-            //                        Console.ForegroundColor = ConsoleColor.Red;
-            //                        Console.WriteLine("Por favor, informe um número presente no Menu.");
-            //                    }
-            //                    else
-            //                    {
-            //                        Console.Clear();
-            //                    }
-            //                }
-            //                catch (Exception ex)
-            //                {
-            //                    Console.ForegroundColor = ConsoleColor.Red;
-            //                    Console.WriteLine("Informe um número presente no Menu.");
-            //                }
-
-            //                if (opcaoDesejada == 1)
-            //                {
-            //                    Console.Clear();
-            //                    var diaExtenso = Calendario.ObterDiaPorExtenso();
-            //                    Console.WriteLine($"Dia por extenso: {diaExtenso}");
-            //                    Console.WriteLine(diaExtenso);
-            //                }
-
-            //                if (opcaoDesejada == 2)
-            //                {
-            //                    Console.Clear();
-            //                    var mesExtenso = Calendario.ObterMesPorExtenso();
-            //                    Console.WriteLine($"Mês por extenso: {mesExtenso}");
-            //                    Console.WriteLine(mesExtenso);
-            //                }
-
-            //                if (opcaoDesejada == 3)
-            //                {
-            //                    Console.Clear();
-            //                    var anoExtenso = Calendario.ObterAnoPorExtenso();
-            //                    Console.WriteLine($"Ano por extenso: {anoExtenso}");
-            //                    Console.WriteLine(anoExtenso);
-            //                }
-
-            //                if (opcaoDesejada == 4)
-            //                {
-            //                    Console.Clear();
-            //                    var dataCompletaPorExtenso = Calendario.ObterDataCompletaPorExtenso();
-            //                    Console.WriteLine($"Data completa por extenso: {dataCompletaPorExtenso}");
-            //                    Console.WriteLine(dataCompletaPorExtenso);
-            //                }
-
-            //                        Console.Write("Informe uma data (aaaa/mm/de)");
-            //                         var data = Console.ReadLine();
 
 
+            var data = new Calendario();
+
+            try
+            {
+                Console.Write("Por favor informe uma data (yyyy/MM/dd): ");
+                data.Data = Convert.ToDateTime(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Digite uma data valida!!");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("Por favor informe uma data (yyyy/MM/dd): ");
+                data.Data = Convert.ToDateTime(Console.ReadLine());
+
+            }
+
+
+
+            var opcaoDesejada = 0;
+
+            while (opcaoDesejada != 5)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(@"
+------------------MENU------------------
+1 - Obter dia por extenso
+2 - Obter mes por extenso
+3 - Obter ano por extenso
+4 - Obter data completo por extenso
+5 - SAIR
+");
+
+                try
+                {
+                    Console.Write("Digite a opção desejada: ");
+                    opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+
+                    if (opcaoDesejada < 0 || (opcaoDesejada != 1 && opcaoDesejada != 2 && opcaoDesejada != 3 && opcaoDesejada != 4 && opcaoDesejada != 5))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("A opção informada não é válida. Por favor informe um número presente no MENU.");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("A opção informada não é válida. Por favor informe um número presente no MENU.");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+
+                if (opcaoDesejada == 1)
+                {
+                    Console.Clear();
+                    var diaPorExtenso = data.ObterDiaPorExtenso();
+                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine(diaPorExtenso);
+                }
+
+                if (opcaoDesejada == 2)
+                {
+                    Console.Clear();
+                    var mesPorExtenso = data.ObterMesPorExtenso();
+                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine(mesPorExtenso);
+                }
+
+                if (opcaoDesejada == 3)
+                {
+                    Console.Clear();
+                    var anoPorExtenso = data.ObterAnoPorExtenso();
+                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine(anoPorExtenso);
+                }
+
+                if (opcaoDesejada == 4)
+                {
+                    Console.Clear();
+                    var dataCompletaPorExtenso = data.ObterDataCompletaPorExtenso();
+                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine(dataCompletaPorExtenso);
+                }
+            }
         }
-
     }
+
 }
+
