@@ -7,7 +7,7 @@
 
 # 🛠 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+As seguintes ferramentas foram usadas na construção do trabalho:
 
 - [VisualStudio](https://visualstudio.microsoft.com/)
 - [GitHub](https://github.com/)
