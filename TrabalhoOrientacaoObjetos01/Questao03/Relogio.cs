@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03
+namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao03
 {
     // Cristyan Alvir Alexandrino
     public class Relogio

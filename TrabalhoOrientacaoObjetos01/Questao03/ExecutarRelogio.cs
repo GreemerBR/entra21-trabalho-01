@@ -3,21 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao03;
 
-namespace TrabalhoOrientacaoObjetos01.Questao03
+namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao03
 {
     // Cristyan Alvir Alexandrino
     public class ExecutarRelogio
     {
-
         public void Executar()
         {
             Console.Clear();
             var hora = new Relogio();
 
-            Console.Write("Por favor informe uma hora (hh:mm:ss): ");
-            var horaInformada = Convert.ToDateTime(Console.ReadLine());
+            var horaInformadaValida = false;
+            var horaInformada = DateTime.Now;
+
+            while (horaInformadaValida == false)
+            {
+                try
+                {
+                    Console.Write("Por favor informe uma hora (hh:mm:ss): ");
+                    horaInformada = Convert.ToDateTime(Console.ReadLine());
+
+                    horaInformadaValida = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("A hora informada não é valida.");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+            }
 
             hora.Hora = horaInformada;
 
@@ -62,7 +77,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 {
                     Console.Clear();
                     var horaPorExtenso = hora.ObterHoraPorExtenso();
-                    Console.WriteLine($"Hora informada: {horaInformada}");
+                    Console.WriteLine($"Hora informada: {horaInformada.ToString("HH:mm:ss")}");
                     Console.WriteLine(horaPorExtenso);
                 }
 
@@ -70,7 +85,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 {
                     Console.Clear();
                     var minutoPorExtenso = hora.ObterMinutoPorExtenso();
-                    Console.WriteLine($"Hora informada: {horaInformada}");
+                    Console.WriteLine($"Hora informada: {horaInformada.ToString("HH:mm:ss")}");
                     Console.WriteLine(minutoPorExtenso);
                 }
 
@@ -78,7 +93,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 {
                     Console.Clear();
                     var segundoPorExtenso = hora.ObterSegundoPorExtenso();
-                    Console.WriteLine($"Hora informada: {horaInformada}");
+                    Console.WriteLine($"Hora informada: {horaInformada.ToString("HH:mm:ss")}");
                     Console.WriteLine(segundoPorExtenso);
                 }
 
@@ -86,7 +101,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 {
                     Console.Clear();
                     var horaCompletaPorExtenso = hora.ObterHoraCompletaPorExtenso();
-                    Console.WriteLine($"Hora informada: {horaInformada}");
+                    Console.WriteLine($"Hora informada: {horaInformada.ToString("HH:mm:ss")}");
                     Console.WriteLine(horaCompletaPorExtenso);
                 }
             }

@@ -664,11 +664,11 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
 
         public string ObterDataCompletaPorExtenso()
         {
-            var mesExtenso = ObterMesPorExtenso();
-            var diaExtenso = ObterDiaPorExtenso();
+            var diaExtenso = ObterDiaPorExtenso().Replace("Dia ","");
+            var mesExtenso = ObterMesPorExtenso();            
             var anoExtenso = ObterAnoPorExtenso();
 
-            var dataPorExtenso = diaExtenso + " de " + mesExtenso + " de " + anoExtenso + ".";
+            var dataPorExtenso = diaExtenso + " de " + mesExtenso + " de " + anoExtenso;
 
             return dataPorExtenso;
         }

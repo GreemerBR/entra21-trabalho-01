@@ -25,17 +25,17 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(10, "Outubro")]
         [InlineData(11, "Novembro")]
         [InlineData(12, "Dezembro")]
-        public void Cenario01_Validar_ObterMesPorExtenso(int mesInfomardo, string mesPorExtenso)
+        public void Cenario01_Validar_ObterMesPorExtenso(int mesInformardo, string mesPorExtensoEsperado)
         {
             // Arrange
             var caledario = new Calendario();
-            caledario.Data = new DateTime(2022, mesInfomardo, 01);
+            caledario.Data = new DateTime(2022, mesInformardo, 01);
 
             // Act
-            var mesTexto = caledario.ObterMesPorExtenso();
+            var mesPorExtenso = caledario.ObterMesPorExtenso();
 
             // Assert
-            mesTexto.Should().Be(mesPorExtenso);
+            mesPorExtenso.Should().Be(mesPorExtensoEsperado);
         }
 
         [Theory]
@@ -71,17 +71,17 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(30, "Dia Trinta")]
         [InlineData(31, "Dia Trinta e Um")]
 
-        public void Cenario02_Validar_ObterDiaPorExtenso(int diaInfomardo, string diaPorExtenso)
+        public void Cenario02_Validar_ObterDiaPorExtenso(int diaInformardo, string diaPorExtensoEsperado)
         {
             // Arrange
             var caledario = new Calendario();
-            caledario.Data = new DateTime(2022, 01, diaInfomardo);
+            caledario.Data = new DateTime(2022, 01, diaInformardo);
 
             //Act
-            var diaTexto = caledario.ObterDiaPorExtenso();
+            var diaPorExtenso = caledario.ObterDiaPorExtenso();
 
             //Assert
-            diaTexto.Should().Be(diaPorExtenso);
+            diaPorExtenso.Should().Be(diaPorExtensoEsperado);
         }
 
         [Theory]
@@ -146,17 +146,43 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Tests.Questao0
         [InlineData(2028, "Dois mil e Vinte e Oito")]
         [InlineData(2029, "Dois mil e Vinte e Nove")]
         [InlineData(2030, "Dois mil e Trinta")]
-        public void Cenario03_Validar_ObterAnoPorExtenso(int anoInfomardo, string anoPorExtenso)
+        public void Cenario03_Validar_ObterAnoPorExtenso(int anoInformardo, string anoPorExtensoEsperado)
         {
             // Arrange
             var caledario = new Calendario();
-            caledario.Data = new DateTime(anoInfomardo, 01, 01);
+            caledario.Data = new DateTime(anoInformardo, 01, 01);
 
             // Act
-            var anoTexto = caledario.ObterAnoPorExtenso();
+            var anoPorExtenso = caledario.ObterAnoPorExtenso();
 
             // Assert
-            anoTexto.Should().Be(anoPorExtenso);
+            anoPorExtenso.Should().Be(anoPorExtensoEsperado);
+        }
+
+        [Theory]
+        [InlineData(27, 01, 1973, "Vinte e Sete de Janeiro de Mil Novecentos e Setenta e Três")]
+        [InlineData(22, 02, 1930, "Vinte e Dois de Fevereiro de Mil Novecentos e Trinta")]
+        [InlineData(21, 03, 1970, "Vinte e Um de Março de Mil Novecentos e Setenta")]
+        [InlineData(10, 04, 1996, "Dez de Abril de Mil Novecentos e Noventa e Seis")]
+        [InlineData(17, 05, 1993, "Dezessete de Maio de Mil Novecentos e Noventa e Três")]
+        [InlineData(07, 06, 2004, "Sete de Junho de Dois mil e Quatro")]
+        [InlineData(08, 07, 1952, "Oito de Julho de Mil Novecentos e Cinquenta e Dois")]
+        [InlineData(24, 08, 1969, "Vinte e Quatro de Agosto de Mil Novecentos e Sessenta e Nove")]
+        [InlineData(11, 09, 2001, "Onze de Setembro de Dois mil e Um")]
+        [InlineData(12, 10, 2000, "Doze de Outubro de Dois mil")]
+        [InlineData(26, 11, 2016, "Vinte e Seis de Novembro de Dois mil e Dezesseis")]
+        [InlineData(31, 12, 2022, "Trinta e Um de Dezembro de Dois mil e Vinte e Dois")]
+        public void Cenario04_Validar_ObterDataCompletaPorExtenso(int diaInformado, int mesInformado, int anoInformado, string DataPorExtensoEsperada)
+        {
+            // Arrange
+            var caledario = new Calendario();
+            caledario.Data = new DateTime(anoInformado, mesInformado, diaInformado);
+
+            // Act
+            var DataPorExtenso = caledario.ObterDataCompletaPorExtenso();
+
+            // Assert
+            DataPorExtenso.Should().Be(DataPorExtensoEsperada);
         }
     }
 }

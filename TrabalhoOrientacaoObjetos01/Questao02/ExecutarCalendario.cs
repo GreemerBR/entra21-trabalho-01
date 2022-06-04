@@ -11,26 +11,30 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
     {
         public void Executar()
         {
-
-
+            Console.Clear();
             var data = new Calendario();
 
-            try
+            var dataInformadaValida = false;
+            var dataInformada = DateTime.Now;
+
+            while (dataInformadaValida == false)
             {
-                Console.Write("Por favor informe uma data (yyyy/MM/dd): ");
-                data.Data = Convert.ToDateTime(Console.ReadLine());
+                try
+                {
+                    Console.Write("Por favor informe uma data (yyyy/mm/dd): ");
+                    dataInformada = Convert.ToDateTime(Console.ReadLine());
+
+                    dataInformadaValida = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("A data informada não é valida.");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
             }
-            catch (Exception)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Digite uma data valida!!");
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("Por favor informe uma data (yyyy/MM/dd): ");
-                data.Data = Convert.ToDateTime(Console.ReadLine());
 
-            }
-
-
+            data.Data = dataInformada;
 
             var opcaoDesejada = 0;
 
@@ -73,7 +77,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     Console.Clear();
                     var diaPorExtenso = data.ObterDiaPorExtenso();
-                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine($"Data informada: {dataInformada.ToString("dd/MM/yyyy")}");
                     Console.WriteLine(diaPorExtenso);
                 }
 
@@ -81,7 +85,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     Console.Clear();
                     var mesPorExtenso = data.ObterMesPorExtenso();
-                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine($"Data informada: {dataInformada.ToString("dd/MM/yyyy")}");
                     Console.WriteLine(mesPorExtenso);
                 }
 
@@ -89,7 +93,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     Console.Clear();
                     var anoPorExtenso = data.ObterAnoPorExtenso();
-                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine($"Data informada: {dataInformada.ToString("dd/MM/yyyy")}");
                     Console.WriteLine(anoPorExtenso);
                 }
 
@@ -97,12 +101,10 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao02
                 {
                     Console.Clear();
                     var dataCompletaPorExtenso = data.ObterDataCompletaPorExtenso();
-                    Console.WriteLine($"Data informada: {data.Data}");
+                    Console.WriteLine($"Data informada: {dataInformada.ToString("dd/MM/yyyy")}");
                     Console.WriteLine(dataCompletaPorExtenso);
                 }
             }
         }
     }
-
 }
-

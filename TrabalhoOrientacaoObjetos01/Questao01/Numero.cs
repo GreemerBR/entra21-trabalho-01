@@ -657,7 +657,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
             {
                 numeroCompletoPorExtenso = decimalPorExtenso;
             }
-            else if (milharPorExtenso != "" && centenaPorExtenso != "" && dezenaPorExtenso != "" && unidadePorExtenso != "" && decimalPorExtenso == "")
+            else if ((milharPorExtenso != "" || centenaPorExtenso != "" || dezenaPorExtenso != "" || unidadePorExtenso != "") && decimalPorExtenso == "")
             {
                 numeroCompletoPorExtenso = milharPorExtenso + centenaPorExtenso + dezenaPorExtenso + unidadePorExtenso + " real(is)";
             }

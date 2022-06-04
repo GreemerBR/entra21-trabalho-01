@@ -34,7 +34,6 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                         Console.WriteLine("O número informado não é válido.");
                         Console.ForegroundColor = ConsoleColor.Green;
                     }
-
                 }
                 catch (Exception ex)
                 {
@@ -93,7 +92,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     {
                         decimalPorExtenso = decimalPorExtenso + " centavos";
                     }
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(decimalPorExtenso);
                 }
 
@@ -105,7 +104,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     {
                        unidadePorExtenso = unidadePorExtenso + " real(is)";
                     }
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(unidadePorExtenso);
                 }
 
@@ -117,7 +116,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     {
                         dezenaPorExtenso = dezenaPorExtenso + " reais";
                     }
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(dezenaPorExtenso);
                 }
 
@@ -129,7 +128,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     {
                         centenaPorExtenso = centenaPorExtenso + " reais";
                     }
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(centenaPorExtenso);
                 }
 
@@ -141,7 +140,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                     {
                         milharPorExtenso = milharPorExtenso + " reais";
                     }
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(milharPorExtenso);
                 }
 
@@ -149,7 +148,7 @@ namespace TrabalhoOrientacaoObjetos01.TrabalhoOrientacaoObjetos01.Questao01
                 {
                     Console.Clear();
                     var numeroCompletoPorExtenso = numero.ObterNumeroCompletoPorExtenso();
-                    Console.WriteLine($"Número informado: {numeroInformado}");
+                    Console.WriteLine($"Número informado: {numeroInformado.ToString("F")}");
                     Console.WriteLine(numeroCompletoPorExtenso);
                 }
             }
