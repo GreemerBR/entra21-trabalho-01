@@ -3,6 +3,15 @@
 
 # Descrição do Trabalho
 <p align="center">Fazer três questões com seus respectivos testes unitários.</p>
+
+
+# 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [VisualStudio](https://visualstudio.microsoft.com/)
+- [GitHub](https://github.com/)
+
 <a href="https://github.com/GreemerBR">
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GreemerBR&layout=compact&langs_count=7&theme=dracula"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=GreemerBR&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
